@@ -30,88 +30,6 @@ namespace BIT {
 
 }
 
-namespace BIT_CLASS {
-    class BIT {
-    public:
-        int n;
-        vector<int> tree;
-
-        BIT(int n) {
-            this->n = n;
-            tree.resize(n + 1);
-        }
-
-        int lowbit(int x) {
-            return x & (-x);
-        }
-
-        void update(int x, int u) {
-            for (int i = x; i <= n; i += lowbit(i)) {
-                tree[i] += u;
-            }
-        }
-
-        int query(int x) {
-            int ans = 0;
-            for (int i = x; i > 0; i -= lowbit(i)) {
-                ans += tree[i];
-            }
-            return ans;
-        }
-
-        int query(int x, int y) {
-            return query(y) - query(x - 1);
-        }
-    };
-}
-
-namespace BIT2 {
-    // not oo
-    int tree[10005];
-    int n;
-    int lowbit(int x) {
-        return x & -x;
-    }
-
-    void add(int x, int u) {
-        for (int i = x; i <= n; i += lowbit(i)) {
-            tree[i] += u;
-        }
-    }
-
-    int ask(int x) {
-        int ans = 0;
-        for (int i = x; i > 0; i -= lowbit(i)) {
-            ans += tree[i];
-        }
-        return ans;
-    }
-
-    // oo
-    class BIT {
-    public:
-        int n;
-        vector<int> tree;
-        BIT(int n) {
-            this->n = n + 1;
-            tree.resize(n + 1);
-        }
-        void update(int x, int u) {
-            for (int i = x; i <= n; i += lowbit(i)) {
-                tree[i] += u;
-            }
-        }
-        int query(int x) {
-            int ans = 0;
-            for (int i = x; i > 0; i -= lowbit(i)) {
-                ans += tree[i];
-            }
-            return ans;
-        }
-    };
-}
-
-
 namespace BIT_2 {
     vector<int> tree;
     int n;
@@ -182,7 +100,7 @@ namespace BIT_4 {
 
     void init(int nn) {
         n = nn;
-        tree.resize(n);
+        tree.resize(n + 1);
     }
     int lowbit(int x) {
         return x & -x;
@@ -191,7 +109,6 @@ namespace BIT_4 {
         for (int i = x; i <= n; i += lowbit(i)) {
             tree[i] += u;
         }
-        return ;
     }
     int query(int x) {
         int ans = 0;
@@ -308,8 +225,8 @@ namespace BIT_9 {
 
     void init(int nn) {
         n = nn;
-        tree.resize(n);
-        assi.resize(n);
+        tree.resize(n + 1);
+        assi.resize(n + 1);
     }
     int lowbit(int x) {
         return x & -x;
@@ -334,8 +251,7 @@ namespace BIT_9 {
     int ask_lr(int x, int y) {
         return ask_lr(y) - ask_lr(x - 1);
     }
-};
-
+}
 
 namespace BIT_10 {
     vector<int> tree, assi;
@@ -376,8 +292,8 @@ namespace BIT_11 {
     int n;
     void init(int nn) {
         n = nn;
-        tree.resize(n);
-        assi.resize(n);
+        tree.resize(n + 1);
+        assi.resize(n + 1);
     }
     int lowbit(int x) {
         return x & -x;
@@ -404,12 +320,37 @@ namespace BIT_11 {
     }
 }
 
+namespace BIT_12 {
+    int n;
+    vector<int> tree;
+    void init(int nn) {
+        n = nn;
+        tree.resize(n + 1);
+    }
+    int lowbit(int x) {
+        return x & -x;
+    }
+    void add(int x, int u) {
+        for (int i = x; i <= n; i += lowbit(i)) {
+            tree[i] += u;
+        }
+    }
+    int ask(int x) {
+        int ans = 0;
+        for (int i = x; i > 0; i -= lowbit(i)) {
+            ans += tree[i];
+        }
+        return ans;
+    }
+}
+
 
 // ----------µ¥µã------------
 void test() {
-    using BIT_8::init;
-    using BIT_8::add;
-    using BIT_8::ask;
+    // ans : 22
+    using BIT_12::init;
+    using BIT_12::add;
+    using BIT_12::ask;
     init(101);
     add(1, 2);
     add(10, 20);
