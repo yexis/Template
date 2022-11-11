@@ -354,7 +354,30 @@ namespace DIJK_13 {
     }
 }
 
-using DIJK_13::dijkstra;
+namespace DIJK_14 {
+    vector<int> dijkstra(vector<vector<pair<int, int>>>& g, int s) {
+        int n = g.size();
+        vector<int> dis(n, INT_MAX);
+        priority_queue<pair<int, int>, vector<pair<int, int>>, greater<> > pq;
+        dis[s] = 0;
+        pq.emplace(0, s);
+        while (!pq.empty()) {
+            auto [d, u] = pq.top();
+            pq.pop();
+            if (dis[u] < d) {
+                continue;
+            }
+            for (auto [v, w] : g[u]) {
+                if (d + w < dis[v]) {
+                    dis[v] = d + w;
+                    pq.emplace(dis[v], v);
+                }
+            }
+        }
+        return dis;
+    }
+}
+
 vector<vector<pair<int, int> > > get(int n, vector<vector<int> > edges) {
     vector<vector<pair<int, int>>> g(n);
     for (auto e : edges) {
@@ -365,6 +388,7 @@ vector<vector<pair<int, int> > > get(int n, vector<vector<int> > edges) {
     return g;
 }
 void test() {
+    using DIJK_14::dijkstra;
     // ans : [0, 3, 1, 4, 5, 6]
     vector<vector<int> > edges = {
             {0, 1, 4},

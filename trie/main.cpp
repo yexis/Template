@@ -377,10 +377,54 @@ namespace TRIE_7 {
     };
 }
 
+namespace TRIE_8 {
+    class Node {
+    public:
+        int val;
+        vector<Node*> child;
+        Node() {
+            val = 0;
+            child.resize(26);
+        }
+    };
+    class Trie {
+    public:
+        Node* root;
+        Trie() {
+            root = new Node();
+        }
+        void add(string s) {
+            int n = s.size();
+            auto p = root;
+            for (int i = 0; i < n; i++) {
+                int idx = s[i] - 'a';
+                if (p->child[idx] == nullptr) {
+                    p->child[idx] = new Node();
+                }
+                p = p->child[idx];
+                p->val++;
+            }
+        }
+        int ask(string s) {
+            int n = s.size();
+            auto p = root;
+            int ans = 0;
+            for (int i = 0; i < n; i++) {
+                int idx = s[i] - 'a';
+                if (p->child[idx] == nullptr) {
+                    return ans;
+                }
+                p = p->child[idx];
+                ans += p->val;
+            }
+            return ans;
+        }
+    };
+}
+
 int main() {
     // ans : 10
-    // using TRIE_6;
-    TRIE_7::Trie trie;
+    TRIE_8::Trie trie;
     trie.add("liguoyang");
     trie.add("hezijing");
     trie.add("liguoqing");

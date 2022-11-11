@@ -459,6 +459,39 @@ namespace SEG_11 {
     }
 }
 
+namespace SEG_12 {
+    int f[40010];
+    void init() {
+        memset(f, 0, sizeof(f));
+    }
+    void add(int o, int l, int r, int i, int u) {
+        if (l == r) {
+            f[o] += u;
+            return;
+        }
+        int m = (l + r) >> 1;
+        if (i <= m) {
+            add(o * 2, l, m, i, u);
+        } else {
+            add(o * 2 + 1, m + 1, r, i, u);
+        }
+        f[o] = f[o * 2] + f[o * 2 + 1];
+    }
+    int ask(int o, int l, int r, int L, int R) {
+        if (L <= l && R >= r) {
+            return f[o];
+        }
+        int ans = 0;
+        int m = (l + r) >> 1;
+        if (L <= m) {
+            ans += ask(o * 2, l, m, L, R);
+        }
+        if (R > m) {
+            ans += ask(o * 2 + 1, m + 1, r, L, R);
+        }
+        return ans;
+    }
+}
 
 void test();
 int main() {
@@ -466,13 +499,14 @@ int main() {
     return 0;
 }
 
-using SEG_11::init;
-using SEG_11::add;
-using SEG_11::ask;
+using SEG_12::init;
+using SEG_12::add;
+using SEG_12::ask;
 void test() {
+    // ans : 200
     SEG_10::init();
     add(1, 1, 10001, 1, 2);
     add(1, 1, 10001, 10, 20);
     add(1, 1, 10001, 100, 200);
-    cout << ask(1, 1, 10001, 99, 10001) << endl;
+    cout << "ans-12 : " << ask(1, 1, 10001, 99, 10001) << endl;
 }

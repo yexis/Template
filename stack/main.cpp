@@ -69,10 +69,27 @@ namespace STACK_1 {
 
 }
 
-using STACK_1::get_next_higher;
+namespace STACK_2 {
+    vector<int> get_next_higher(vector<int>& nums) {
+        int n = nums.size();
+        vector<int> res(n, -1);
+        stack<int> st;
+        for (int i = 0; i < n; i++) {
+            while (!st.empty() && nums[st.top()] < nums[i]) {
+                res[st.top()] = nums[i];
+                st.pop();
+            }
+            st.push(i);
+        }
+        return res;
+    }
+}
+
+using STACK_2::get_next_higher;
 using STACK_1::get_next_higher_2;
 using STACK_1::get_next_lower;
 using STACK_1::get_next_lower_2;
+// 下一个更大元素
 void test() {
     // ans : 8 8 9 6 9 20 20 -1 -1
     vector<int> nums = {3,1,8,5,6,9,0,20,7};
@@ -82,6 +99,8 @@ void test() {
     }
     cout << "\n";
 }
+
+// 下一个更大元素
 void test_2() {
     // ans : 8 8 9 6 9 20 20 -1 -1
     vector<int> nums = {3,1,8,5,6,9,0,20,7};
@@ -91,6 +110,8 @@ void test_2() {
     }
     cout << "\n";
 }
+
+// 下一个更小元素
 void test_3() {
     // ans : 1 0 5 0 0 0 -1 7 -1
     vector<int> nums = {3,1,8,5,6,9,0,20,7};
@@ -100,6 +121,8 @@ void test_3() {
     }
     cout << "\n";
 }
+
+// 下一个更小元素
 void test_4() {
     // ans : 1 0 5 0 0 0 -1 7 -1
     vector<int> nums = {3,1,8,5,6,9,0,20,7};

@@ -287,6 +287,40 @@ namespace DJ_7 {
     }
 }
 
+namespace DJ_8 {
+    int n;
+    vector<int> fa;
+    vector<int> ra;
+    void init(int nn) {
+        n = nn;
+        fa.resize(n);
+        ra.resize(n);
+        for (int i = 0; i < n; i++) {
+            fa[i] = i;
+            ra[i] = 1;
+        }
+    }
+    int find(int x) {
+        if (fa[x] != x) {
+            fa[x] = find(fa[x]);
+        }
+        return fa[x];
+    }
+    void merge(int x, int y) {
+        int rx = find(x);
+        int ry = find(y);
+        if (rx == ry) {
+            return;
+        }
+        if (ra[rx] < ra[ry]) {
+            swap(rx, ry);
+        }
+        fa[ry] = rx;
+        if (ra[rx] == ra[ry]) {
+            ra[rx]++;
+        }
+    }
+}
 
 
 int main() {

@@ -53,6 +53,21 @@ namespace BG_3 {
     }
 }
 
+namespace BG_4 {
+    bool dfs(vector<vector<int>>& g, int idx, int co) {
+        if (colors[idx]) {
+            return colors[idx] == co;
+        }
+        colors[idx] = co;
+        for (auto u : g[idx]) {
+            if (!dfs(g, u, 3 - co)) {
+                return false;
+            }
+        }
+        return true;
+    }
+}
+
 void init(int n, vector<vector<int>> edges) {
     colors.resize(n);
     g.resize(n);
@@ -75,7 +90,7 @@ void test() {
             {2, 3}
     };
     init(n, edges);
-    cout << dfs(g, 0, 1) << endl;
+    cout << "ans : " << dfs(g, 0, 1) << endl;
 }
 
 int main() {
