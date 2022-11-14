@@ -378,6 +378,41 @@ namespace BIT_13 {
     }
 }
 
+namespace BIT_14 {
+    int n;
+    vector<int> tree;
+    vector<int> assi;
+    void init(int nn) {
+        n = nn;
+        tree.resize(n + 1);
+        assi.resize(n + 1);
+    }
+    int lowbit(int x) {
+        return x & -x;
+    }
+    void add_lr(int x, int u) {
+        for (int i = x; i <= n; i += lowbit(i)) {
+            tree[i] += u;
+            assi[i] += u * (x - 1);
+        }
+    }
+    void add_lr(int x, int y, int u) {
+        add_lr(x, u);
+        add_lr(y + 1, -u);
+    }
+    int ask_lr(int x) {
+        int ans = 0;
+        for (int i = x; i > 0; i -= lowbit(i)) {
+            ans += x * tree[i] - assi[i];
+        }
+        return ans;
+    }
+    int ask_lr(int x, int y) {
+        return ask_lr(y) - ask_lr(x - 1);
+    }
+
+}
+
 // ----------单点------------
 void test() {
     // ans : 22
@@ -393,9 +428,9 @@ void test() {
 
 // ----------区间-----------
 void test_lr() {
-    using BIT_13::init;
-    using BIT_13::add_lr;
-    using BIT_13::ask_lr;
+    using BIT_14::init;
+    using BIT_14::add_lr;
+    using BIT_14::ask_lr;
 
     // ans : 12
     init(100);
@@ -403,7 +438,7 @@ void test_lr() {
     add_lr(3, 5, 2);
     add_lr(3, 3, 3);
     add_lr(99, 101, 10);
-    cout << "区间 ans : " << ask_lr(3, 5) << endl;
+    cout << "14 区间 ans : " << ask_lr(3, 5) << endl;
 }
 
 int main() {
