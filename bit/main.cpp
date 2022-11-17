@@ -410,7 +410,40 @@ namespace BIT_14 {
     int ask_lr(int x, int y) {
         return ask_lr(y) - ask_lr(x - 1);
     }
+}
 
+namespace BIT_15 {
+    int n;
+    vector<int> tree;
+    vector<int> assi;
+    void init(int nn) {
+        n = nn;
+        tree.resize(n + 1);
+        assi.resize(n + 1);
+    }
+    int lowbit(int x) {
+        return x & -x;
+    }
+    void add_lr(int x, int u) {
+        for (int i = x; i <= n; i += lowbit(i)) {
+            tree[i] += u;
+            assi[i] += u * (x - 1);
+        }
+    }
+    void add_lr(int x, int y, int u) {
+        add_lr(x, u);
+        add_lr(y + 1, -u);
+    }
+    int ask_lr(int x) {
+        int ans = 0;
+        for (int i = x; i > 0; i -= lowbit(i)) {
+            ans += x * tree[i] - assi[i];
+        }
+        return ans;
+    }
+    int ask_lr(int x, int y) {
+        return ask_lr(y) - ask_lr(x - 1);
+    }
 }
 
 // ----------单点------------
@@ -423,14 +456,14 @@ void test() {
     add(1, 2);
     add(10, 20);
     add(100, 200);
-    cout << "单点 ans : " << ask(10) << endl;
+    cout << "12 单点 ans : " << ask(10) << endl;
 }
 
 // ----------区间-----------
 void test_lr() {
-    using BIT_14::init;
-    using BIT_14::add_lr;
-    using BIT_14::ask_lr;
+    using BIT_15::init;
+    using BIT_15::add_lr;
+    using BIT_15::ask_lr;
 
     // ans : 12
     init(100);
@@ -438,7 +471,7 @@ void test_lr() {
     add_lr(3, 5, 2);
     add_lr(3, 3, 3);
     add_lr(99, 101, 10);
-    cout << "14 区间 ans : " << ask_lr(3, 5) << endl;
+    cout << "15 区间 ans : " << ask_lr(3, 5) << endl;
 }
 
 int main() {

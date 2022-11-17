@@ -276,8 +276,38 @@ namespace MS_7 {
     }
 }
 
-using MS_7::merge_sort;
+namespace MS_8 {
+    void merge_sort(vector<int>& nums, int l, int r) {
+        if (l >= r) {
+            return;
+        }
+        int m = (l + r) >> 1;
+        merge_sort(nums, l, m);
+        merge_sort(nums, m + 1, r);
+        vector<int> tmp(r - l + 1);
+        int i = l, j = m + 1, k = 0;
+        while (i <= m && j <= r) {
+            if (nums[i] <= nums[j]) {
+                tmp[k++] = nums[i++];
+            } else {
+                tmp[k++] = nums[j++];
+            }
+        }
+        while (i <= m) {
+            tmp[k++] = nums[i++];
+        }
+        while (j <= r) {
+            tmp[k++] = nums[j++];
+        }
+        for (int i = l; i <= r; i++) {
+            nums[i] = tmp[i - l];
+        }
+    }
+}
+
+using MS_6::merge_sort;
 void test() {
+    // ans : 1 2 2 2 4 4 6 6 7
     vector<int> nums = {4,2,6,4,2,1,6,7,2};
     merge_sort(nums, 0, nums.size() - 1);
     for (auto e : nums) {

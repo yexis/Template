@@ -1,5 +1,7 @@
 #include <iostream>
 #include <vector>
+#include <algorithm>
+#include <numeric>
 using namespace std;
 
 namespace DJ {
@@ -322,6 +324,33 @@ namespace DJ_8 {
     }
 }
 
+namespace DJ_9 {
+    int n;
+    vector<int> fa, ra;
+    void init(int nn) {
+        n = nn;
+        iota(fa.begin(), fa.end(), 0);
+        ra.resize(n, 1);
+    }
+    int find(int x) {
+        if (fa[x] != x) {
+            fa[x] = find(fa[x]);
+        }
+        return fa[x];
+    }
+    void merge(int x, int y) {
+        int rx = find(x);
+        int ry = find(y);
+        if (rx == ry) return;
+        if (ra[rx] < ra[ry]) {
+            swap(rx, ry);
+        }
+        fa[ry] = rx;
+        if (ra[rx] == ra[ry]) {
+            ra[rx]++;
+        }
+    }
+}
 
 int main() {
     vector<int> nums = {1,2,2,3,3,4};

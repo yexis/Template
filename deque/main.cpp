@@ -83,9 +83,36 @@ namespace DQ_2 {
     }
 }
 
+namespace DQ_3 {
+    // deque ”≈ªØ dp
+    int max_sum(vector<int>& nums, int k) {
+        int ans = INT_MIN;
+        int n = nums.size();
+        vector<int> f(n, -inf);
+        deque<int> q;
+
+        for (int i = 0; i < n; i++) {
+            int x = nums[i];
+            while (!q.empty() && i - q.front() > k) {
+                q.pop_front();
+            }
+            f[i] = x;
+            if (!q.empty()) {
+                f[i] = max(f[i], x + f[q.front()]);
+            }
+            ans = max(ans, f[i]);
+            while (!q.empty() && f[q.back()] <= f[i]) {
+                q.pop_back();
+            }
+            q.emplace_back(i);
+        }
+        return ans;
+    }
+
+}
 
 using DQ_2::cal;
-using DQ_2::max_sum;
+using DQ_3::max_sum;
 void test() {
     // ans : 37
     vector<int> nums = {10, 2, -10, 5, 20};

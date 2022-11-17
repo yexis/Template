@@ -85,7 +85,24 @@ namespace STACK_2 {
     }
 }
 
-using STACK_2::get_next_higher;
+namespace STACK_3 {
+    vector<int> get_next_higher(vector<int>& nums) {
+        int n = nums.size();
+        vector<int> res(n, -1);
+        stack<int> st;
+        for (int i = 0; i < n; i++) {
+            int x = nums[i];
+            while (!st.empty() && nums[st.top()] < x) {
+                res[st.top()] = nums[i];
+                st.pop();
+            }
+            st.emplace(i);
+        }
+        return res;
+    }
+}
+
+using STACK_3::get_next_higher;
 using STACK_1::get_next_higher_2;
 using STACK_1::get_next_lower;
 using STACK_1::get_next_lower_2;
