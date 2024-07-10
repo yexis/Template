@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.17)
 project(template)
 
-set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD 20)
 
 add_executable(template main.cpp)
 
@@ -21,6 +21,7 @@ add_executable(bit_single_max bit/bit_single_max/main.cpp)
 
 
 add_executable(trie trie/base/main.cpp)
+add_executable(trie01 trie/trie01.cpp)
 
 add_executable(comb_base comb/base/main.cpp)
 
@@ -33,6 +34,7 @@ add_executable(queue_monotonous queue/monotonous/main.cpp)
 add_executable(segment segment/base/main.cpp)
 add_executable(segment_interval_add segment/interval_add/main.cpp)
 add_executable(segment_interval_max segment/interval_max/main.cpp)
+add_executable(segment_interval_add_x2 segment/interval_add_x2/main.cpp)
 
 add_executable(lcp lcp/base/main.cpp)
 
@@ -68,6 +70,12 @@ add_executable(ors_ors ors/ors/main.cpp)
 add_executable(binary_lifting binary_lifting/tree/main.cpp)
 add_executable(binary_lifting2 binary_lifting/tree/main2.cpp)
 
-add_executable(st st/base/main.cpp)
+add_executable(rmq rmq/base/main.cpp)
 
 add_executable(lca_dfs lca/binary_lifting/dfs.cpp)
+
+add_executable(p4648 luogu/p4648.cpp)
+
+add_executable(scan_line scan_line/line.cpp)
+
+add_executable(eratosthenes prime_filter/eratosthenes.cpp)

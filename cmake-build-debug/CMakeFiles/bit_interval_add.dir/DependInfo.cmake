@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/yex/CPP/template/bit/bit_interval_add/main.cpp" "/Users/yex/CPP/template/cmake-build-debug/CMakeFiles/bit_interval_add.dir/bit/bit_interval_add/main.cpp.o"
+  "/Users/yex/CPP/Template/bit/bit_interval_add/main.cpp" "/Users/yex/CPP/Template/cmake-build-debug/CMakeFiles/bit_interval_add.dir/bit/bit_interval_add/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

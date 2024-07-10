@@ -92,7 +92,7 @@ namespace BIT_INTERVAL_3 {
         add_lr(x, u);
         add_lr(y + 1, -u);
     }
-    int ask_lr(int x) {
+    int ask(int x) {
         int ans = 0;
         for (int i = x; i > 0; i -= lb(i)) {
             ans += x * tr[i] - as[i];
@@ -100,7 +100,7 @@ namespace BIT_INTERVAL_3 {
         return ans;
     }
     int ask_lr(int x, int y) {
-        return ask_lr(y) - ask_lr(x - 1);
+        return ask(y) - ask(x - 1);
     }
 }
 
@@ -116,7 +116,7 @@ void test() {
     add_lr(3, 5, 2);
     add_lr(3, 3, 3);
     add_lr(99, 101, 10);
-    cout << "BIT_INTERVAL Çø¼ä ans : " << ask_lr(3, 5) << endl;
+    cout << "BIT_INTERVAL ans : " << ask_lr(3, 5) << endl;
 }
 
 int main() {

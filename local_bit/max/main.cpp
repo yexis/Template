@@ -1,7 +1,7 @@
 //
 // Created by yex on 2023/3/24.
 //
-#include "../../main.h"
+#include "../../sum.h"
 namespace SEG_MAX_1 {
     int n;
     vector<int> a;

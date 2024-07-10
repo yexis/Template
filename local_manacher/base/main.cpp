@@ -2,7 +2,7 @@
 // Created by yex on 2023/3/24.
 //
 
-#include "../../main.h"
+#include "../../sum.h"
 namespace MANACHER_1 {
     vector<int> get_d1(string s) {
         int n = s.size();

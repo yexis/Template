@@ -1,7 +1,9 @@
 //
 // Created by liguoyang on 2023/6/19.
 //
-#include "../../main.h"
+#include "../../sum.h"
+
+// 求最近公共祖先，lca算法
 
 // __builtin_ctz() / __buitlin_ctzll()
 // 返回元素的二进制表示末尾0的个数
@@ -93,8 +95,186 @@ namespace BL_1 {
     }
 }
 
-using BL_1::init;
-using BL_1::lca;
+namespace BL_2 {
+    int n, m;
+    vector<int> dep;
+    vector<vector<int>> g, st;
+    void init(int nn, vector<vector<int>>& edges) {
+        n = nn;
+        m = 32 - __builtin_clz(n);
+
+        dep.resize(n);
+        g.resize(n);
+        st.resize(n, vector<int>(m, -1));
+
+        for (auto& e : edges) {
+            int x = e[0], y = e[1];
+            g[x].push_back(y);
+            g[y].push_back(x);
+        }
+
+        function<void(int, int)> dfs = [&](int u, int o) {
+            st[u][0] = o;
+            for (auto& v : g[u]) {
+                if (v != o) {
+                    dep[v] = dep[u] + 1;
+                    dfs(v, u);
+                }
+            }
+        };
+        dfs(0, -1);
+
+        for (int i = 1; i < m; i++) {
+            for (int u = 0; u < n; u++) {
+                if (st[u][i - 1] != -1) {
+                    st[u][i] = st[st[u][i - 1]][i - 1];
+                }
+            }
+        }
+    }
+    int lca(int x, int y) {
+        if (dep[x] > dep[y]) {
+            swap(x, y);
+        }
+        int d = dep[y] - dep[x];
+        for (; d; d &= d - 1) {
+            int i = __builtin_ctz(d);
+            y = st[y][i];
+        }
+        if (x == y) {
+            return x;
+        }
+        for (int i = m - 1; i >= 0; i--) {
+            if (st[x][i] != st[y][i]) {
+                x = st[x][i];
+                y = st[y][i];
+            }
+        }
+        return st[x][0];
+    }
+}
+
+namespace BL_3 {
+    int n, m;
+    vector<int> dep;
+    vector<vector<int>> g, st;
+    void init(int nn, vector<vector<int>>& edges) {
+        n= nn;
+        m = 32 - __builtin_clz(n);
+
+        dep.resize(n);
+        g.resize(n);
+        st.resize(n, vector<int>(m, -1));
+
+        for (auto& e : edges) {
+            int x = e[0], y = e[1];
+            g[x].push_back(y);
+            g[y].push_back(x);
+        }
+
+        function<void(int, int)> dfs = [&](int u, int o) {
+            st[u][0] = o;
+            for (auto& v : g[u]) {
+                if (v != o) {
+                    dep[v] = dep[u] + 1;
+                    dfs(v, u);
+                }
+            }
+        };
+        dfs(0, -1);
+
+        for (int i = 1; i < m; i++) {
+            for (int u = 0; u < n; u++) {
+                if (st[u][i - 1] != -1) {
+                    st[u][i] = st[st[u][i - 1]][i - 1];
+                }
+            }
+        }
+    }
+    int lca(int x, int y) {
+        if (dep[x] > dep[y]) {
+            swap(x, y);
+        }
+        int d = dep[y] - dep[x];
+        for (; d; d &= d - 1) {
+            int i = __builtin_ctz(d);
+            y = st[y][i];
+        }
+        if (x == y) {
+            return x;
+        }
+        for (int i = m - 1; i >= 0; i--) {
+            if (st[x][i] != st[y][i]) {
+                x = st[x][i];
+                y = st[y][i];
+            }
+        }
+        return st[x][0];
+
+    }
+}
+
+namespace BL_4 {
+    int n;
+    int Log;
+    vector<int> dep;
+    vector<vector<int>> g, st;
+    void init(int nn, vector<vector<int>>& edges) {
+        n = nn;
+        Log = 32 - __builtin_clz(n);
+        dep.resize(n);
+        g.resize(n);
+        st.resize(n, vector<int>(Log, -1));
+
+        for (auto& e : edges) {
+            int x = e[0], y = e[1];
+            g[x].push_back(y);
+            g[y].push_back(x);
+        }
+
+        function<void(int, int)> dfs = [&](int u, int o) {
+            st[u][0] = o;
+            dep[u] = 0;
+            if (st[u][0] != -1) {
+                dep[u] = dep[st[u][0]] + 1;
+            }
+            for (int i = 1; i < Log; i++) {
+                if (st[u][i - 1] != -1) {
+                    st[u][i] = st[st[u][i - 1]][i - 1];
+                }
+            }
+            for (auto& v : g[u]) {
+                if (v != o) {
+                    dfs(v, u);
+                }
+            }
+        };
+        dfs(0, -1);
+    }
+    int lca(int x, int y) {
+        if (dep[x] > dep[y]) {
+            swap(x ,y);
+        }
+        int d = dep[y] - dep[x];
+        for (; d; d &= d - 1) {
+            int i = __builtin_ctz(d);
+            y = st[y][i];
+        }
+        if (x == y) {
+            return y;
+        }
+        for (int i = Log - 1; i >= 0; i--) {
+            if (st[x][i] != st[y][i]) {
+                x = st[x][i];
+                y = st[y][i];
+            }
+        }
+        return st[y][0];
+    }
+}
+
+using BL_4::init;
+using BL_4::lca;
 void test() {
     int n = 8;
     vector<vector<int>> edges = {{0, 1}, {1, 2}, {1, 3}, {0, 4}, {0, 5}, {2, 6}, {3, 7}};

@@ -1,4 +1,4 @@
-#include "../../main.h"
+#include "../../sum.h"
 
 
 static constexpr  int mx = 10000005;

@@ -68,10 +68,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/yex/CPP/template
+CMAKE_SOURCE_DIR = /Users/yex/CPP/Template
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/yex/CPP/template/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/yex/CPP/Template/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -100,9 +100,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yex/CPP/template/cmake-build-debug/CMakeFiles /Users/yex/CPP/template/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yex/CPP/Template/cmake-build-debug/CMakeFiles /Users/yex/CPP/Template/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yex/CPP/template/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yex/CPP/Template/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -131,6 +131,32 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named eratosthenes
+
+# Build rule for target.
+eratosthenes: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 eratosthenes
+.PHONY : eratosthenes
+
+# fast build rule for target.
+eratosthenes/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/eratosthenes.dir/build.make CMakeFiles/eratosthenes.dir/build
+.PHONY : eratosthenes/fast
+
+#=============================================================================
+# Target rules for targets named p4648
+
+# Build rule for target.
+p4648: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 p4648
+.PHONY : p4648
+
+# fast build rule for target.
+p4648/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/p4648.dir/build.make CMakeFiles/p4648.dir/build
+.PHONY : p4648/fast
+
+#=============================================================================
 # Target rules for targets named lca_dfs
 
 # Build rule for target.
@@ -144,17 +170,17 @@ lca_dfs/fast:
 .PHONY : lca_dfs/fast
 
 #=============================================================================
-# Target rules for targets named st
+# Target rules for targets named rmq
 
 # Build rule for target.
-st: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 st
-.PHONY : st
+rmq: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rmq
+.PHONY : rmq
 
 # fast build rule for target.
-st/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/st.dir/build.make CMakeFiles/st.dir/build
-.PHONY : st/fast
+rmq/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rmq.dir/build.make CMakeFiles/rmq.dir/build
+.PHONY : rmq/fast
 
 #=============================================================================
 # Target rules for targets named binary_lifting2
@@ -235,19 +261,6 @@ z_kmp/fast:
 .PHONY : z_kmp/fast
 
 #=============================================================================
-# Target rules for targets named kmp
-
-# Build rule for target.
-kmp: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kmp
-.PHONY : kmp
-
-# fast build rule for target.
-kmp/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/kmp.dir/build.make CMakeFiles/kmp.dir/build
-.PHONY : kmp/fast
-
-#=============================================================================
 # Target rules for targets named binary_graph
 
 # Build rule for target.
@@ -274,6 +287,19 @@ heap_sort/fast:
 .PHONY : heap_sort/fast
 
 #=============================================================================
+# Target rules for targets named lower_bound
+
+# Build rule for target.
+lower_bound: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lower_bound
+.PHONY : lower_bound
+
+# fast build rule for target.
+lower_bound/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lower_bound.dir/build.make CMakeFiles/lower_bound.dir/build
+.PHONY : lower_bound/fast
+
+#=============================================================================
 # Target rules for targets named rand
 
 # Build rule for target.
@@ -285,6 +311,19 @@ rand: cmake_check_build_system
 rand/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rand.dir/build.make CMakeFiles/rand.dir/build
 .PHONY : rand/fast
+
+#=============================================================================
+# Target rules for targets named segment_interval_add_x2
+
+# Build rule for target.
+segment_interval_add_x2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 segment_interval_add_x2
+.PHONY : segment_interval_add_x2
+
+# fast build rule for target.
+segment_interval_add_x2/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/segment_interval_add_x2.dir/build.make CMakeFiles/segment_interval_add_x2.dir/build
+.PHONY : segment_interval_add_x2/fast
 
 #=============================================================================
 # Target rules for targets named trie
@@ -365,17 +404,30 @@ comb_base/fast:
 .PHONY : comb_base/fast
 
 #=============================================================================
-# Target rules for targets named lower_bound
+# Target rules for targets named kmp
 
 # Build rule for target.
-lower_bound: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lower_bound
-.PHONY : lower_bound
+kmp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 kmp
+.PHONY : kmp
 
 # fast build rule for target.
-lower_bound/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lower_bound.dir/build.make CMakeFiles/lower_bound.dir/build
-.PHONY : lower_bound/fast
+kmp/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/kmp.dir/build.make CMakeFiles/kmp.dir/build
+.PHONY : kmp/fast
+
+#=============================================================================
+# Target rules for targets named trie01
+
+# Build rule for target.
+trie01: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 trie01
+.PHONY : trie01
+
+# fast build rule for target.
+trie01/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/trie01.dir/build.make CMakeFiles/trie01.dir/build
+.PHONY : trie01/fast
 
 #=============================================================================
 # Target rules for targets named lca_tarjan
@@ -584,6 +636,19 @@ djset_rank: cmake_check_build_system
 djset_rank/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/djset_rank.dir/build.make CMakeFiles/djset_rank.dir/build
 .PHONY : djset_rank/fast
+
+#=============================================================================
+# Target rules for targets named scan_line
+
+# Build rule for target.
+scan_line: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 scan_line
+.PHONY : scan_line
+
+# fast build rule for target.
+scan_line/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/scan_line.dir/build.make CMakeFiles/scan_line.dir/build
+.PHONY : scan_line/fast
 
 #=============================================================================
 # Target rules for targets named template
@@ -1111,6 +1176,33 @@ lower_bound/base/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lower_bound.dir/build.make CMakeFiles/lower_bound.dir/lower_bound/base/main.cpp.s
 .PHONY : lower_bound/base/main.cpp.s
 
+luogu/p4648.o: luogu/p4648.cpp.o
+
+.PHONY : luogu/p4648.o
+
+# target to build an object file
+luogu/p4648.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/p4648.dir/build.make CMakeFiles/p4648.dir/luogu/p4648.cpp.o
+.PHONY : luogu/p4648.cpp.o
+
+luogu/p4648.i: luogu/p4648.cpp.i
+
+.PHONY : luogu/p4648.i
+
+# target to preprocess a source file
+luogu/p4648.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/p4648.dir/build.make CMakeFiles/p4648.dir/luogu/p4648.cpp.i
+.PHONY : luogu/p4648.cpp.i
+
+luogu/p4648.s: luogu/p4648.cpp.s
+
+.PHONY : luogu/p4648.s
+
+# target to generate assembly for a file
+luogu/p4648.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/p4648.dir/build.make CMakeFiles/p4648.dir/luogu/p4648.cpp.s
+.PHONY : luogu/p4648.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -1273,6 +1365,33 @@ ors/ors/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ors_ors.dir/build.make CMakeFiles/ors_ors.dir/ors/ors/main.cpp.s
 .PHONY : ors/ors/main.cpp.s
 
+prime_filter/eratosthenes.o: prime_filter/eratosthenes.cpp.o
+
+.PHONY : prime_filter/eratosthenes.o
+
+# target to build an object file
+prime_filter/eratosthenes.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/eratosthenes.dir/build.make CMakeFiles/eratosthenes.dir/prime_filter/eratosthenes.cpp.o
+.PHONY : prime_filter/eratosthenes.cpp.o
+
+prime_filter/eratosthenes.i: prime_filter/eratosthenes.cpp.i
+
+.PHONY : prime_filter/eratosthenes.i
+
+# target to preprocess a source file
+prime_filter/eratosthenes.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/eratosthenes.dir/build.make CMakeFiles/eratosthenes.dir/prime_filter/eratosthenes.cpp.i
+.PHONY : prime_filter/eratosthenes.cpp.i
+
+prime_filter/eratosthenes.s: prime_filter/eratosthenes.cpp.s
+
+.PHONY : prime_filter/eratosthenes.s
+
+# target to generate assembly for a file
+prime_filter/eratosthenes.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/eratosthenes.dir/build.make CMakeFiles/eratosthenes.dir/prime_filter/eratosthenes.cpp.s
+.PHONY : prime_filter/eratosthenes.cpp.s
+
 queue/monotonous/main.o: queue/monotonous/main.cpp.o
 
 .PHONY : queue/monotonous/main.o
@@ -1408,6 +1527,60 @@ rand/base/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rand.dir/build.make CMakeFiles/rand.dir/rand/base/main.cpp.s
 .PHONY : rand/base/main.cpp.s
 
+rmq/base/main.o: rmq/base/main.cpp.o
+
+.PHONY : rmq/base/main.o
+
+# target to build an object file
+rmq/base/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rmq.dir/build.make CMakeFiles/rmq.dir/rmq/base/main.cpp.o
+.PHONY : rmq/base/main.cpp.o
+
+rmq/base/main.i: rmq/base/main.cpp.i
+
+.PHONY : rmq/base/main.i
+
+# target to preprocess a source file
+rmq/base/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rmq.dir/build.make CMakeFiles/rmq.dir/rmq/base/main.cpp.i
+.PHONY : rmq/base/main.cpp.i
+
+rmq/base/main.s: rmq/base/main.cpp.s
+
+.PHONY : rmq/base/main.s
+
+# target to generate assembly for a file
+rmq/base/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rmq.dir/build.make CMakeFiles/rmq.dir/rmq/base/main.cpp.s
+.PHONY : rmq/base/main.cpp.s
+
+scan_line/line.o: scan_line/line.cpp.o
+
+.PHONY : scan_line/line.o
+
+# target to build an object file
+scan_line/line.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/scan_line.dir/build.make CMakeFiles/scan_line.dir/scan_line/line.cpp.o
+.PHONY : scan_line/line.cpp.o
+
+scan_line/line.i: scan_line/line.cpp.i
+
+.PHONY : scan_line/line.i
+
+# target to preprocess a source file
+scan_line/line.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/scan_line.dir/build.make CMakeFiles/scan_line.dir/scan_line/line.cpp.i
+.PHONY : scan_line/line.cpp.i
+
+scan_line/line.s: scan_line/line.cpp.s
+
+.PHONY : scan_line/line.s
+
+# target to generate assembly for a file
+scan_line/line.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/scan_line.dir/build.make CMakeFiles/scan_line.dir/scan_line/line.cpp.s
+.PHONY : scan_line/line.cpp.s
+
 segment/base/main.o: segment/base/main.cpp.o
 
 .PHONY : segment/base/main.o
@@ -1462,6 +1635,33 @@ segment/interval_add/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/segment_interval_add.dir/build.make CMakeFiles/segment_interval_add.dir/segment/interval_add/main.cpp.s
 .PHONY : segment/interval_add/main.cpp.s
 
+segment/interval_add_x2/main.o: segment/interval_add_x2/main.cpp.o
+
+.PHONY : segment/interval_add_x2/main.o
+
+# target to build an object file
+segment/interval_add_x2/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/segment_interval_add_x2.dir/build.make CMakeFiles/segment_interval_add_x2.dir/segment/interval_add_x2/main.cpp.o
+.PHONY : segment/interval_add_x2/main.cpp.o
+
+segment/interval_add_x2/main.i: segment/interval_add_x2/main.cpp.i
+
+.PHONY : segment/interval_add_x2/main.i
+
+# target to preprocess a source file
+segment/interval_add_x2/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/segment_interval_add_x2.dir/build.make CMakeFiles/segment_interval_add_x2.dir/segment/interval_add_x2/main.cpp.i
+.PHONY : segment/interval_add_x2/main.cpp.i
+
+segment/interval_add_x2/main.s: segment/interval_add_x2/main.cpp.s
+
+.PHONY : segment/interval_add_x2/main.s
+
+# target to generate assembly for a file
+segment/interval_add_x2/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/segment_interval_add_x2.dir/build.make CMakeFiles/segment_interval_add_x2.dir/segment/interval_add_x2/main.cpp.s
+.PHONY : segment/interval_add_x2/main.cpp.s
+
 segment/interval_max/main.o: segment/interval_max/main.cpp.o
 
 .PHONY : segment/interval_max/main.o
@@ -1488,33 +1688,6 @@ segment/interval_max/main.s: segment/interval_max/main.cpp.s
 segment/interval_max/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/segment_interval_max.dir/build.make CMakeFiles/segment_interval_max.dir/segment/interval_max/main.cpp.s
 .PHONY : segment/interval_max/main.cpp.s
-
-st/base/main.o: st/base/main.cpp.o
-
-.PHONY : st/base/main.o
-
-# target to build an object file
-st/base/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/st.dir/build.make CMakeFiles/st.dir/st/base/main.cpp.o
-.PHONY : st/base/main.cpp.o
-
-st/base/main.i: st/base/main.cpp.i
-
-.PHONY : st/base/main.i
-
-# target to preprocess a source file
-st/base/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/st.dir/build.make CMakeFiles/st.dir/st/base/main.cpp.i
-.PHONY : st/base/main.cpp.i
-
-st/base/main.s: st/base/main.cpp.s
-
-.PHONY : st/base/main.s
-
-# target to generate assembly for a file
-st/base/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/st.dir/build.make CMakeFiles/st.dir/st/base/main.cpp.s
-.PHONY : st/base/main.cpp.s
 
 subset/base/main.o: subset/base/main.cpp.o
 
@@ -1570,6 +1743,33 @@ trie/base/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/trie.dir/build.make CMakeFiles/trie.dir/trie/base/main.cpp.s
 .PHONY : trie/base/main.cpp.s
 
+trie/trie01.o: trie/trie01.cpp.o
+
+.PHONY : trie/trie01.o
+
+# target to build an object file
+trie/trie01.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/trie01.dir/build.make CMakeFiles/trie01.dir/trie/trie01.cpp.o
+.PHONY : trie/trie01.cpp.o
+
+trie/trie01.i: trie/trie01.cpp.i
+
+.PHONY : trie/trie01.i
+
+# target to preprocess a source file
+trie/trie01.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/trie01.dir/build.make CMakeFiles/trie01.dir/trie/trie01.cpp.i
+.PHONY : trie/trie01.cpp.i
+
+trie/trie01.s: trie/trie01.cpp.s
+
+.PHONY : trie/trie01.s
+
+# target to generate assembly for a file
+trie/trie01.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/trie01.dir/build.make CMakeFiles/trie01.dir/trie/trie01.cpp.s
+.PHONY : trie/trie01.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -1589,6 +1789,7 @@ help:
 	@echo "... dijkstra"
 	@echo "... djset_base"
 	@echo "... djset_rank"
+	@echo "... eratosthenes"
 	@echo "... gcd"
 	@echo "... heap_sort"
 	@echo "... kmp"
@@ -1601,18 +1802,22 @@ help:
 	@echo "... next_higher_k"
 	@echo "... num_dp"
 	@echo "... ors_ors"
+	@echo "... p4648"
 	@echo "... queue_monotonous"
 	@echo "... quick_power"
 	@echo "... quick_power_matrix"
 	@echo "... quick_sort"
 	@echo "... rand"
+	@echo "... rmq"
+	@echo "... scan_line"
 	@echo "... segment"
 	@echo "... segment_interval_add"
+	@echo "... segment_interval_add_x2"
 	@echo "... segment_interval_max"
-	@echo "... st"
 	@echo "... subset"
 	@echo "... template"
 	@echo "... trie"
+	@echo "... trie01"
 	@echo "... z_kmp"
 	@echo "... binary_graph/base/main.o"
 	@echo "... binary_graph/base/main.i"
@@ -1671,6 +1876,9 @@ help:
 	@echo "... lower_bound/base/main.o"
 	@echo "... lower_bound/base/main.i"
 	@echo "... lower_bound/base/main.s"
+	@echo "... luogu/p4648.o"
+	@echo "... luogu/p4648.i"
+	@echo "... luogu/p4648.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
@@ -1689,6 +1897,9 @@ help:
 	@echo "... ors/ors/main.o"
 	@echo "... ors/ors/main.i"
 	@echo "... ors/ors/main.s"
+	@echo "... prime_filter/eratosthenes.o"
+	@echo "... prime_filter/eratosthenes.i"
+	@echo "... prime_filter/eratosthenes.s"
 	@echo "... queue/monotonous/main.o"
 	@echo "... queue/monotonous/main.i"
 	@echo "... queue/monotonous/main.s"
@@ -1704,24 +1915,33 @@ help:
 	@echo "... rand/base/main.o"
 	@echo "... rand/base/main.i"
 	@echo "... rand/base/main.s"
+	@echo "... rmq/base/main.o"
+	@echo "... rmq/base/main.i"
+	@echo "... rmq/base/main.s"
+	@echo "... scan_line/line.o"
+	@echo "... scan_line/line.i"
+	@echo "... scan_line/line.s"
 	@echo "... segment/base/main.o"
 	@echo "... segment/base/main.i"
 	@echo "... segment/base/main.s"
 	@echo "... segment/interval_add/main.o"
 	@echo "... segment/interval_add/main.i"
 	@echo "... segment/interval_add/main.s"
+	@echo "... segment/interval_add_x2/main.o"
+	@echo "... segment/interval_add_x2/main.i"
+	@echo "... segment/interval_add_x2/main.s"
 	@echo "... segment/interval_max/main.o"
 	@echo "... segment/interval_max/main.i"
 	@echo "... segment/interval_max/main.s"
-	@echo "... st/base/main.o"
-	@echo "... st/base/main.i"
-	@echo "... st/base/main.s"
 	@echo "... subset/base/main.o"
 	@echo "... subset/base/main.i"
 	@echo "... subset/base/main.s"
 	@echo "... trie/base/main.o"
 	@echo "... trie/base/main.i"
 	@echo "... trie/base/main.s"
+	@echo "... trie/trie01.o"
+	@echo "... trie/trie01.i"
+	@echo "... trie/trie01.s"
 .PHONY : help
 
 

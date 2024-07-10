@@ -2,7 +2,7 @@
 // Created by liguoyang on 2023/4/19.
 //
 
-#include "../../main.h"
+#include "../../sum.h"
 
 struct DJ {
     int n;

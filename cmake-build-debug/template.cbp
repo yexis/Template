@@ -8,38 +8,118 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/yex/CPP/template/cmake-build-debug"/>
+				<Option working_dir="/Users/yex/CPP/Template/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/Users/yex/CPP/template/cmake-build-debug"/>
+				<Option working_dir="/Users/yex/CPP/Template/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="eratosthenes">
+				<Option output="/Users/yex/CPP/Template/cmake-build-debug/eratosthenes" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/yex/CPP/Template/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 eratosthenes"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="eratosthenes/fast">
+				<Option output="/Users/yex/CPP/Template/cmake-build-debug/eratosthenes" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/yex/CPP/Template/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 eratosthenes/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/Users/yex/CPP/template/cmake-build-debug"/>
+				<Option working_dir="/Users/yex/CPP/Template/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="p4648">
+				<Option output="/Users/yex/CPP/Template/cmake-build-debug/p4648" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/yex/CPP/Template/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 p4648"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="p4648/fast">
+				<Option output="/Users/yex/CPP/Template/cmake-build-debug/p4648" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/yex/CPP/Template/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 p4648/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="lca_dfs">
-				<Option output="/Users/yex/CPP/template/cmake-build-debug/lca_dfs" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/yex/CPP/template/cmake-build-debug"/>
+				<Option output="/Users/yex/CPP/Template/cmake-build-debug/lca_dfs" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/yex/CPP/Template/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -51,15 +131,15 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 lca_dfs"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 lca_dfs"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="lca_dfs/fast">
-				<Option output="/Users/yex/CPP/template/cmake-build-debug/lca_dfs" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/yex/CPP/template/cmake-build-debug"/>
+				<Option output="/Users/yex/CPP/Template/cmake-build-debug/lca_dfs" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/yex/CPP/Template/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -71,15 +151,15 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 lca_dfs/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 lca_dfs/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="st">
-				<Option output="/Users/yex/CPP/template/cmake-build-debug/st" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/yex/CPP/template/cmake-build-debug"/>
+			<Target title="rmq">
+				<Option output="/Users/yex/CPP/Template/cmake-build-debug/rmq" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/yex/CPP/Template/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -91,15 +171,15 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 st"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 rmq"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="st/fast">
-				<Option output="/Users/yex/CPP/template/cmake-build-debug/st" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/yex/CPP/template/cmake-build-debug"/>
+			<Target title="rmq/fast">
+				<Option output="/Users/yex/CPP/Template/cmake-build-debug/rmq" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/yex/CPP/Template/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -111,15 +191,15 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 st/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 rmq/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="binary_lifting2">
-				<Option output="/Users/yex/CPP/template/cmake-build-debug/binary_lifting2" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/yex/CPP/template/cmake-build-debug"/>
+				<Option output="/Users/yex/CPP/Template/cmake-build-debug/binary_lifting2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/yex/CPP/Template/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -131,15 +211,15 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 binary_lifting2"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 binary_lifting2"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="binary_lifting2/fast">
-				<Option output="/Users/yex/CPP/template/cmake-build-debug/binary_lifting2" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/yex/CPP/template/cmake-build-debug"/>
+				<Option output="/Users/yex/CPP/Template/cmake-build-debug/binary_lifting2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/yex/CPP/Template/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -151,15 +231,15 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 binary_lifting2/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 binary_lifting2/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="binary_lifting">
-				<Option output="/Users/yex/CPP/template/cmake-build-debug/binary_lifting" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/yex/CPP/template/cmake-build-debug"/>
+				<Option output="/Users/yex/CPP/Template/cmake-build-debug/binary_lifting" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/yex/CPP/Template/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -171,15 +251,15 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 binary_lifting"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 binary_lifting"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="binary_lifting/fast">
-				<Option output="/Users/yex/CPP/template/cmake-build-debug/binary_lifting" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/yex/CPP/template/cmake-build-debug"/>
+				<Option output="/Users/yex/CPP/Template/cmake-build-debug/binary_lifting" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/yex/CPP/Template/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -191,15 +271,15 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 binary_lifting/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 binary_lifting/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="ors_ors">
-				<Option output="/Users/yex/CPP/template/cmake-build-debug/ors_ors" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/yex/CPP/template/cmake-build-debug"/>
+				<Option output="/Users/yex/CPP/Template/cmake-build-debug/ors_ors" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/yex/CPP/Template/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -211,15 +291,15 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 ors_ors"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 ors_ors"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="ors_ors/fast">
-				<Option output="/Users/yex/CPP/template/cmake-build-debug/ors_ors" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/yex/CPP/template/cmake-build-debug"/>
+				<Option output="/Users/yex/CPP/Template/cmake-build-debug/ors_ors" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/yex/CPP/Template/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -231,15 +311,15 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 ors_ors/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 ors_ors/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="manacher">
-				<Option output="/Users/yex/CPP/template/cmake-build-debug/manacher" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/yex/CPP/template/cmake-build-debug"/>
+				<Option output="/Users/yex/CPP/Template/cmake-build-debug/manacher" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/yex/CPP/Template/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -251,15 +331,15 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 manacher"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 manacher"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="manacher/fast">
-				<Option output="/Users/yex/CPP/template/cmake-build-debug/manacher" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/yex/CPP/template/cmake-build-debug"/>
+				<Option output="/Users/yex/CPP/Template/cmake-build-debug/manacher" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/yex/CPP/Template/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -271,15 +351,15 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 manacher/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 manacher/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="next_higher_k">
-				<Option output="/Users/yex/CPP/template/cmake-build-debug/next_higher_k" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/yex/CPP/template/cmake-build-debug"/>
+				<Option output="/Users/yex/CPP/Template/cmake-build-debug/next_higher_k" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/yex/CPP/Template/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -291,15 +371,15 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 next_higher_k"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 next_higher_k"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="next_higher_k/fast">
-				<Option output="/Users/yex/CPP/template/cmake-build-debug/next_higher_k" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/yex/CPP/template/cmake-build-debug"/>
+				<Option output="/Users/yex/CPP/Template/cmake-build-debug/next_higher_k" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/yex/CPP/Template/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -311,15 +391,15 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 next_higher_k/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 next_higher_k/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="z_kmp">
-				<Option output="/Users/yex/CPP/template/cmake-build-debug/z_kmp" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/yex/CPP/template/cmake-build-debug"/>
+				<Option output="/Users/yex/CPP/Template/cmake-build-debug/z_kmp" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/yex/CPP/Template/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -331,15 +411,15 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 z_kmp"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 z_kmp"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="z_kmp/fast">
-				<Option output="/Users/yex/CPP/template/cmake-build-debug/z_kmp" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/yex/CPP/template/cmake-build-debug"/>
+				<Option output="/Users/yex/CPP/Template/cmake-build-debug/z_kmp" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/yex/CPP/Template/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -351,55 +431,15 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 z_kmp/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="kmp">
-				<Option output="/Users/yex/CPP/template/cmake-build-debug/kmp" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/yex/CPP/template/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 kmp"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="kmp/fast">
-				<Option output="/Users/yex/CPP/template/cmake-build-debug/kmp" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/yex/CPP/template/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 kmp/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 z_kmp/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="binary_graph">
-				<Option output="/Users/yex/CPP/template/cmake-build-debug/binary_graph" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/yex/CPP/template/cmake-build-debug"/>
+				<Option output="/Users/yex/CPP/Template/cmake-build-debug/binary_graph" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/yex/CPP/Template/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -411,15 +451,15 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 binary_graph"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 binary_graph"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="binary_graph/fast">
-				<Option output="/Users/yex/CPP/template/cmake-build-debug/binary_graph" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/yex/CPP/template/cmake-build-debug"/>
+				<Option output="/Users/yex/CPP/Template/cmake-build-debug/binary_graph" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/yex/CPP/Template/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -431,15 +471,15 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 binary_graph/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 binary_graph/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="heap_sort">
-				<Option output="/Users/yex/CPP/template/cmake-build-debug/heap_sort" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/yex/CPP/template/cmake-build-debug"/>
+				<Option output="/Users/yex/CPP/Template/cmake-build-debug/heap_sort" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/yex/CPP/Template/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -451,15 +491,15 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 heap_sort"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 heap_sort"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="heap_sort/fast">
-				<Option output="/Users/yex/CPP/template/cmake-build-debug/heap_sort" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/yex/CPP/template/cmake-build-debug"/>
+				<Option output="/Users/yex/CPP/Template/cmake-build-debug/heap_sort" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/yex/CPP/Template/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -471,295 +511,15 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 heap_sort/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="rand">
-				<Option output="/Users/yex/CPP/template/cmake-build-debug/rand" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/yex/CPP/template/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 rand"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="rand/fast">
-				<Option output="/Users/yex/CPP/template/cmake-build-debug/rand" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/yex/CPP/template/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 rand/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="trie">
-				<Option output="/Users/yex/CPP/template/cmake-build-debug/trie" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/yex/CPP/template/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 trie"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="trie/fast">
-				<Option output="/Users/yex/CPP/template/cmake-build-debug/trie" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/yex/CPP/template/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 trie/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="queue_monotonous">
-				<Option output="/Users/yex/CPP/template/cmake-build-debug/queue_monotonous" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/yex/CPP/template/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 queue_monotonous"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="queue_monotonous/fast">
-				<Option output="/Users/yex/CPP/template/cmake-build-debug/queue_monotonous" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/yex/CPP/template/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 queue_monotonous/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="lcp">
-				<Option output="/Users/yex/CPP/template/cmake-build-debug/lcp" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/yex/CPP/template/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 lcp"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="lcp/fast">
-				<Option output="/Users/yex/CPP/template/cmake-build-debug/lcp" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/yex/CPP/template/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 lcp/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="comb_complicated">
-				<Option output="/Users/yex/CPP/template/cmake-build-debug/comb_complicated" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/yex/CPP/template/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 comb_complicated"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="comb_complicated/fast">
-				<Option output="/Users/yex/CPP/template/cmake-build-debug/comb_complicated" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/yex/CPP/template/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 comb_complicated/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="quick_power">
-				<Option output="/Users/yex/CPP/template/cmake-build-debug/quick_power" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/yex/CPP/template/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 quick_power"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="quick_power/fast">
-				<Option output="/Users/yex/CPP/template/cmake-build-debug/quick_power" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/yex/CPP/template/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 quick_power/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="comb_base">
-				<Option output="/Users/yex/CPP/template/cmake-build-debug/comb_base" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/yex/CPP/template/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 comb_base"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="comb_base/fast">
-				<Option output="/Users/yex/CPP/template/cmake-build-debug/comb_base" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/yex/CPP/template/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 comb_base/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 heap_sort/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="lower_bound">
-				<Option output="/Users/yex/CPP/template/cmake-build-debug/lower_bound" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/yex/CPP/template/cmake-build-debug"/>
+				<Option output="/Users/yex/CPP/Template/cmake-build-debug/lower_bound" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/yex/CPP/Template/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -771,15 +531,15 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 lower_bound"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 lower_bound"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="lower_bound/fast">
-				<Option output="/Users/yex/CPP/template/cmake-build-debug/lower_bound" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/yex/CPP/template/cmake-build-debug"/>
+				<Option output="/Users/yex/CPP/Template/cmake-build-debug/lower_bound" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/yex/CPP/Template/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -791,15 +551,415 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 lower_bound/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 lower_bound/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rand">
+				<Option output="/Users/yex/CPP/Template/cmake-build-debug/rand" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/yex/CPP/Template/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 rand"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rand/fast">
+				<Option output="/Users/yex/CPP/Template/cmake-build-debug/rand" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/yex/CPP/Template/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 rand/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="segment_interval_add_x2">
+				<Option output="/Users/yex/CPP/Template/cmake-build-debug/segment_interval_add_x2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/yex/CPP/Template/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 segment_interval_add_x2"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="segment_interval_add_x2/fast">
+				<Option output="/Users/yex/CPP/Template/cmake-build-debug/segment_interval_add_x2" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/yex/CPP/Template/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 segment_interval_add_x2/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="trie">
+				<Option output="/Users/yex/CPP/Template/cmake-build-debug/trie" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/yex/CPP/Template/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 trie"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="trie/fast">
+				<Option output="/Users/yex/CPP/Template/cmake-build-debug/trie" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/yex/CPP/Template/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 trie/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="queue_monotonous">
+				<Option output="/Users/yex/CPP/Template/cmake-build-debug/queue_monotonous" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/yex/CPP/Template/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 queue_monotonous"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="queue_monotonous/fast">
+				<Option output="/Users/yex/CPP/Template/cmake-build-debug/queue_monotonous" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/yex/CPP/Template/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 queue_monotonous/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lcp">
+				<Option output="/Users/yex/CPP/Template/cmake-build-debug/lcp" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/yex/CPP/Template/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 lcp"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lcp/fast">
+				<Option output="/Users/yex/CPP/Template/cmake-build-debug/lcp" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/yex/CPP/Template/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 lcp/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="comb_complicated">
+				<Option output="/Users/yex/CPP/Template/cmake-build-debug/comb_complicated" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/yex/CPP/Template/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 comb_complicated"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="comb_complicated/fast">
+				<Option output="/Users/yex/CPP/Template/cmake-build-debug/comb_complicated" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/yex/CPP/Template/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 comb_complicated/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="quick_power">
+				<Option output="/Users/yex/CPP/Template/cmake-build-debug/quick_power" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/yex/CPP/Template/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 quick_power"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="quick_power/fast">
+				<Option output="/Users/yex/CPP/Template/cmake-build-debug/quick_power" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/yex/CPP/Template/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 quick_power/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="comb_base">
+				<Option output="/Users/yex/CPP/Template/cmake-build-debug/comb_base" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/yex/CPP/Template/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 comb_base"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="comb_base/fast">
+				<Option output="/Users/yex/CPP/Template/cmake-build-debug/comb_base" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/yex/CPP/Template/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 comb_base/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="kmp">
+				<Option output="/Users/yex/CPP/Template/cmake-build-debug/kmp" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/yex/CPP/Template/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 kmp"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="kmp/fast">
+				<Option output="/Users/yex/CPP/Template/cmake-build-debug/kmp" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/yex/CPP/Template/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 kmp/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="trie01">
+				<Option output="/Users/yex/CPP/Template/cmake-build-debug/trie01" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/yex/CPP/Template/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 trie01"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="trie01/fast">
+				<Option output="/Users/yex/CPP/Template/cmake-build-debug/trie01" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/yex/CPP/Template/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 trie01/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="lca_tarjan">
-				<Option output="/Users/yex/CPP/template/cmake-build-debug/lca_tarjan" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/yex/CPP/template/cmake-build-debug"/>
+				<Option output="/Users/yex/CPP/Template/cmake-build-debug/lca_tarjan" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/yex/CPP/Template/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -811,15 +971,15 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 lca_tarjan"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 lca_tarjan"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="lca_tarjan/fast">
-				<Option output="/Users/yex/CPP/template/cmake-build-debug/lca_tarjan" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/yex/CPP/template/cmake-build-debug"/>
+				<Option output="/Users/yex/CPP/Template/cmake-build-debug/lca_tarjan" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/yex/CPP/Template/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -831,15 +991,15 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 lca_tarjan/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 lca_tarjan/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="bit_single_max">
-				<Option output="/Users/yex/CPP/template/cmake-build-debug/bit_single_max" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/yex/CPP/template/cmake-build-debug"/>
+				<Option output="/Users/yex/CPP/Template/cmake-build-debug/bit_single_max" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/yex/CPP/Template/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -851,15 +1011,15 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 bit_single_max"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 bit_single_max"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="bit_single_max/fast">
-				<Option output="/Users/yex/CPP/template/cmake-build-debug/bit_single_max" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/yex/CPP/template/cmake-build-debug"/>
+				<Option output="/Users/yex/CPP/Template/cmake-build-debug/bit_single_max" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/yex/CPP/Template/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -871,15 +1031,15 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 bit_single_max/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 bit_single_max/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="subset">
-				<Option output="/Users/yex/CPP/template/cmake-build-debug/subset" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/yex/CPP/template/cmake-build-debug"/>
+				<Option output="/Users/yex/CPP/Template/cmake-build-debug/subset" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/yex/CPP/Template/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -891,15 +1051,15 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 subset"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 subset"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="subset/fast">
-				<Option output="/Users/yex/CPP/template/cmake-build-debug/subset" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/yex/CPP/template/cmake-build-debug"/>
+				<Option output="/Users/yex/CPP/Template/cmake-build-debug/subset" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/yex/CPP/Template/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -911,15 +1071,15 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 subset/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 subset/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="segment_interval_max">
-				<Option output="/Users/yex/CPP/template/cmake-build-debug/segment_interval_max" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/yex/CPP/template/cmake-build-debug"/>
+				<Option output="/Users/yex/CPP/Template/cmake-build-debug/segment_interval_max" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/yex/CPP/Template/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -931,15 +1091,15 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 segment_interval_max"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 segment_interval_max"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="segment_interval_max/fast">
-				<Option output="/Users/yex/CPP/template/cmake-build-debug/segment_interval_max" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/yex/CPP/template/cmake-build-debug"/>
+				<Option output="/Users/yex/CPP/Template/cmake-build-debug/segment_interval_max" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/yex/CPP/Template/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -951,15 +1111,15 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 segment_interval_max/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 segment_interval_max/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="segment">
-				<Option output="/Users/yex/CPP/template/cmake-build-debug/segment" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/yex/CPP/template/cmake-build-debug"/>
+				<Option output="/Users/yex/CPP/Template/cmake-build-debug/segment" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/yex/CPP/Template/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -971,15 +1131,15 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 segment"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 segment"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="segment/fast">
-				<Option output="/Users/yex/CPP/template/cmake-build-debug/segment" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/yex/CPP/template/cmake-build-debug"/>
+				<Option output="/Users/yex/CPP/Template/cmake-build-debug/segment" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/yex/CPP/Template/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -991,15 +1151,15 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 segment/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 segment/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="gcd">
-				<Option output="/Users/yex/CPP/template/cmake-build-debug/gcd" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/yex/CPP/template/cmake-build-debug"/>
+				<Option output="/Users/yex/CPP/Template/cmake-build-debug/gcd" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/yex/CPP/Template/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -1011,15 +1171,15 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 gcd"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 gcd"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="gcd/fast">
-				<Option output="/Users/yex/CPP/template/cmake-build-debug/gcd" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/yex/CPP/template/cmake-build-debug"/>
+				<Option output="/Users/yex/CPP/Template/cmake-build-debug/gcd" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/yex/CPP/Template/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -1031,15 +1191,15 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 gcd/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 gcd/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="num_dp">
-				<Option output="/Users/yex/CPP/template/cmake-build-debug/num_dp" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/yex/CPP/template/cmake-build-debug"/>
+				<Option output="/Users/yex/CPP/Template/cmake-build-debug/num_dp" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/yex/CPP/Template/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -1051,15 +1211,15 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 num_dp"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 num_dp"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="num_dp/fast">
-				<Option output="/Users/yex/CPP/template/cmake-build-debug/num_dp" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/yex/CPP/template/cmake-build-debug"/>
+				<Option output="/Users/yex/CPP/Template/cmake-build-debug/num_dp" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/yex/CPP/Template/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -1071,15 +1231,15 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 num_dp/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 num_dp/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="segment_interval_add">
-				<Option output="/Users/yex/CPP/template/cmake-build-debug/segment_interval_add" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/yex/CPP/template/cmake-build-debug"/>
+				<Option output="/Users/yex/CPP/Template/cmake-build-debug/segment_interval_add" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/yex/CPP/Template/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -1091,15 +1251,15 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 segment_interval_add"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 segment_interval_add"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="segment_interval_add/fast">
-				<Option output="/Users/yex/CPP/template/cmake-build-debug/segment_interval_add" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/yex/CPP/template/cmake-build-debug"/>
+				<Option output="/Users/yex/CPP/Template/cmake-build-debug/segment_interval_add" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/yex/CPP/Template/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -1111,15 +1271,15 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 segment_interval_add/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 segment_interval_add/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="bit_single_add">
-				<Option output="/Users/yex/CPP/template/cmake-build-debug/bit_single_add" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/yex/CPP/template/cmake-build-debug"/>
+				<Option output="/Users/yex/CPP/Template/cmake-build-debug/bit_single_add" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/yex/CPP/Template/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -1131,15 +1291,15 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 bit_single_add"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 bit_single_add"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="bit_single_add/fast">
-				<Option output="/Users/yex/CPP/template/cmake-build-debug/bit_single_add" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/yex/CPP/template/cmake-build-debug"/>
+				<Option output="/Users/yex/CPP/Template/cmake-build-debug/bit_single_add" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/yex/CPP/Template/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -1151,15 +1311,15 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 bit_single_add/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 bit_single_add/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="merge_sort">
-				<Option output="/Users/yex/CPP/template/cmake-build-debug/merge_sort" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/yex/CPP/template/cmake-build-debug"/>
+				<Option output="/Users/yex/CPP/Template/cmake-build-debug/merge_sort" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/yex/CPP/Template/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -1171,15 +1331,15 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 merge_sort"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 merge_sort"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="merge_sort/fast">
-				<Option output="/Users/yex/CPP/template/cmake-build-debug/merge_sort" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/yex/CPP/template/cmake-build-debug"/>
+				<Option output="/Users/yex/CPP/Template/cmake-build-debug/merge_sort" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/yex/CPP/Template/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -1191,15 +1351,15 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 merge_sort/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 merge_sort/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="djset_base">
-				<Option output="/Users/yex/CPP/template/cmake-build-debug/djset_base" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/yex/CPP/template/cmake-build-debug"/>
+				<Option output="/Users/yex/CPP/Template/cmake-build-debug/djset_base" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/yex/CPP/Template/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -1211,15 +1371,15 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 djset_base"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 djset_base"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="djset_base/fast">
-				<Option output="/Users/yex/CPP/template/cmake-build-debug/djset_base" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/yex/CPP/template/cmake-build-debug"/>
+				<Option output="/Users/yex/CPP/Template/cmake-build-debug/djset_base" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/yex/CPP/Template/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -1231,15 +1391,15 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 djset_base/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 djset_base/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="quick_power_matrix">
-				<Option output="/Users/yex/CPP/template/cmake-build-debug/quick_power_matrix" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/yex/CPP/template/cmake-build-debug"/>
+				<Option output="/Users/yex/CPP/Template/cmake-build-debug/quick_power_matrix" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/yex/CPP/Template/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -1251,15 +1411,15 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 quick_power_matrix"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 quick_power_matrix"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="quick_power_matrix/fast">
-				<Option output="/Users/yex/CPP/template/cmake-build-debug/quick_power_matrix" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/yex/CPP/template/cmake-build-debug"/>
+				<Option output="/Users/yex/CPP/Template/cmake-build-debug/quick_power_matrix" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/yex/CPP/Template/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -1271,15 +1431,15 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 quick_power_matrix/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 quick_power_matrix/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="bit_interval_add">
-				<Option output="/Users/yex/CPP/template/cmake-build-debug/bit_interval_add" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/yex/CPP/template/cmake-build-debug"/>
+				<Option output="/Users/yex/CPP/Template/cmake-build-debug/bit_interval_add" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/yex/CPP/Template/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -1291,15 +1451,15 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 bit_interval_add"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 bit_interval_add"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="bit_interval_add/fast">
-				<Option output="/Users/yex/CPP/template/cmake-build-debug/bit_interval_add" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/yex/CPP/template/cmake-build-debug"/>
+				<Option output="/Users/yex/CPP/Template/cmake-build-debug/bit_interval_add" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/yex/CPP/Template/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -1311,15 +1471,15 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 bit_interval_add/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 bit_interval_add/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="quick_sort">
-				<Option output="/Users/yex/CPP/template/cmake-build-debug/quick_sort" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/yex/CPP/template/cmake-build-debug"/>
+				<Option output="/Users/yex/CPP/Template/cmake-build-debug/quick_sort" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/yex/CPP/Template/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -1331,15 +1491,15 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 quick_sort"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 quick_sort"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="quick_sort/fast">
-				<Option output="/Users/yex/CPP/template/cmake-build-debug/quick_sort" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/yex/CPP/template/cmake-build-debug"/>
+				<Option output="/Users/yex/CPP/Template/cmake-build-debug/quick_sort" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/yex/CPP/Template/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -1351,15 +1511,15 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 quick_sort/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 quick_sort/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="dijkstra">
-				<Option output="/Users/yex/CPP/template/cmake-build-debug/dijkstra" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/yex/CPP/template/cmake-build-debug"/>
+				<Option output="/Users/yex/CPP/Template/cmake-build-debug/dijkstra" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/yex/CPP/Template/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -1371,15 +1531,15 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 dijkstra"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 dijkstra"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="dijkstra/fast">
-				<Option output="/Users/yex/CPP/template/cmake-build-debug/dijkstra" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/yex/CPP/template/cmake-build-debug"/>
+				<Option output="/Users/yex/CPP/Template/cmake-build-debug/dijkstra" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/yex/CPP/Template/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -1391,15 +1551,15 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 dijkstra/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 dijkstra/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="djset_rank">
-				<Option output="/Users/yex/CPP/template/cmake-build-debug/djset_rank" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/yex/CPP/template/cmake-build-debug"/>
+				<Option output="/Users/yex/CPP/Template/cmake-build-debug/djset_rank" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/yex/CPP/Template/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -1411,15 +1571,15 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 djset_rank"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 djset_rank"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="djset_rank/fast">
-				<Option output="/Users/yex/CPP/template/cmake-build-debug/djset_rank" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/yex/CPP/template/cmake-build-debug"/>
+				<Option output="/Users/yex/CPP/Template/cmake-build-debug/djset_rank" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/yex/CPP/Template/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -1431,15 +1591,55 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 djset_rank/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 djset_rank/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="scan_line">
+				<Option output="/Users/yex/CPP/Template/cmake-build-debug/scan_line" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/yex/CPP/Template/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 scan_line"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="scan_line/fast">
+				<Option output="/Users/yex/CPP/Template/cmake-build-debug/scan_line" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/yex/CPP/Template/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/12.0.0/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 scan_line/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="template">
-				<Option output="/Users/yex/CPP/template/cmake-build-debug/template" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/yex/CPP/template/cmake-build-debug"/>
+				<Option output="/Users/yex/CPP/Template/cmake-build-debug/template" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/yex/CPP/Template/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -1451,15 +1651,15 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 template"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 template"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="template/fast">
-				<Option output="/Users/yex/CPP/template/cmake-build-debug/template" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/yex/CPP/template/cmake-build-debug"/>
+				<Option output="/Users/yex/CPP/Template/cmake-build-debug/template" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/yex/CPP/Template/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -1471,125 +1671,137 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 template/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 template/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/yex/CPP/Template/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/yex/CPP/template/binary_graph/base/main.cpp">
+		<Unit filename="/Users/yex/CPP/Template/binary_graph/base/main.cpp">
 			<Option target="binary_graph"/>
 		</Unit>
-		<Unit filename="/Users/yex/CPP/template/binary_lifting/tree/main.cpp">
+		<Unit filename="/Users/yex/CPP/Template/binary_lifting/tree/main.cpp">
 			<Option target="binary_lifting"/>
 		</Unit>
-		<Unit filename="/Users/yex/CPP/template/binary_lifting/tree/main2.cpp">
+		<Unit filename="/Users/yex/CPP/Template/binary_lifting/tree/main2.cpp">
 			<Option target="binary_lifting2"/>
 		</Unit>
-		<Unit filename="/Users/yex/CPP/template/bit/bit_interval_add/main.cpp">
+		<Unit filename="/Users/yex/CPP/Template/bit/bit_interval_add/main.cpp">
 			<Option target="bit_interval_add"/>
 		</Unit>
-		<Unit filename="/Users/yex/CPP/template/bit/bit_single_add/main.cpp">
+		<Unit filename="/Users/yex/CPP/Template/bit/bit_single_add/main.cpp">
 			<Option target="bit_single_add"/>
 		</Unit>
-		<Unit filename="/Users/yex/CPP/template/bit/bit_single_max/main.cpp">
+		<Unit filename="/Users/yex/CPP/Template/bit/bit_single_max/main.cpp">
 			<Option target="bit_single_max"/>
 		</Unit>
-		<Unit filename="/Users/yex/CPP/template/comb/base/main.cpp">
+		<Unit filename="/Users/yex/CPP/Template/comb/base/main.cpp">
 			<Option target="comb_base"/>
 		</Unit>
-		<Unit filename="/Users/yex/CPP/template/comb/complicated/main.cpp">
+		<Unit filename="/Users/yex/CPP/Template/comb/complicated/main.cpp">
 			<Option target="comb_complicated"/>
 		</Unit>
-		<Unit filename="/Users/yex/CPP/template/dijkstra/base/main.cpp">
+		<Unit filename="/Users/yex/CPP/Template/dijkstra/base/main.cpp">
 			<Option target="dijkstra"/>
 		</Unit>
-		<Unit filename="/Users/yex/CPP/template/djset/base/main.cpp">
+		<Unit filename="/Users/yex/CPP/Template/djset/base/main.cpp">
 			<Option target="djset_base"/>
 		</Unit>
-		<Unit filename="/Users/yex/CPP/template/djset/rank/main.cpp">
+		<Unit filename="/Users/yex/CPP/Template/djset/rank/main.cpp">
 			<Option target="djset_rank"/>
 		</Unit>
-		<Unit filename="/Users/yex/CPP/template/gcd/base/main.cpp">
+		<Unit filename="/Users/yex/CPP/Template/gcd/base/main.cpp">
 			<Option target="gcd"/>
 		</Unit>
-		<Unit filename="/Users/yex/CPP/template/heap_sort/base/main.cpp">
+		<Unit filename="/Users/yex/CPP/Template/heap_sort/base/main.cpp">
 			<Option target="heap_sort"/>
 		</Unit>
-		<Unit filename="/Users/yex/CPP/template/kmp/base/main.cpp">
+		<Unit filename="/Users/yex/CPP/Template/kmp/base/main.cpp">
 			<Option target="kmp"/>
 		</Unit>
-		<Unit filename="/Users/yex/CPP/template/kmp/z-kmp/main.cpp">
+		<Unit filename="/Users/yex/CPP/Template/kmp/z-kmp/main.cpp">
 			<Option target="z_kmp"/>
 		</Unit>
-		<Unit filename="/Users/yex/CPP/template/lca/binary_lifting/dfs.cpp">
+		<Unit filename="/Users/yex/CPP/Template/lca/binary_lifting/dfs.cpp">
 			<Option target="lca_dfs"/>
 		</Unit>
-		<Unit filename="/Users/yex/CPP/template/lca/tarjan/main.cpp">
+		<Unit filename="/Users/yex/CPP/Template/lca/tarjan/main.cpp">
 			<Option target="lca_tarjan"/>
 		</Unit>
-		<Unit filename="/Users/yex/CPP/template/lcp/base/main.cpp">
+		<Unit filename="/Users/yex/CPP/Template/lcp/base/main.cpp">
 			<Option target="lcp"/>
 		</Unit>
-		<Unit filename="/Users/yex/CPP/template/lower_bound/base/main.cpp">
+		<Unit filename="/Users/yex/CPP/Template/lower_bound/base/main.cpp">
 			<Option target="lower_bound"/>
 		</Unit>
-		<Unit filename="/Users/yex/CPP/template/main.cpp">
+		<Unit filename="/Users/yex/CPP/Template/luogu/p4648.cpp">
+			<Option target="p4648"/>
+		</Unit>
+		<Unit filename="/Users/yex/CPP/Template/main.cpp">
 			<Option target="template"/>
 		</Unit>
-		<Unit filename="/Users/yex/CPP/template/main.h">
-			<Option target="template"/>
-		</Unit>
-		<Unit filename="/Users/yex/CPP/template/manacher/base/main.cpp">
+		<Unit filename="/Users/yex/CPP/Template/manacher/base/main.cpp">
 			<Option target="manacher"/>
 		</Unit>
-		<Unit filename="/Users/yex/CPP/template/merge_sort/base/main.cpp">
+		<Unit filename="/Users/yex/CPP/Template/merge_sort/base/main.cpp">
 			<Option target="merge_sort"/>
 		</Unit>
-		<Unit filename="/Users/yex/CPP/template/next_higher_k/base/main.cpp">
+		<Unit filename="/Users/yex/CPP/Template/next_higher_k/base/main.cpp">
 			<Option target="next_higher_k"/>
 		</Unit>
-		<Unit filename="/Users/yex/CPP/template/num_dp/base/main.cpp">
+		<Unit filename="/Users/yex/CPP/Template/num_dp/base/main.cpp">
 			<Option target="num_dp"/>
 		</Unit>
-		<Unit filename="/Users/yex/CPP/template/ors/ors/main.cpp">
+		<Unit filename="/Users/yex/CPP/Template/ors/ors/main.cpp">
 			<Option target="ors_ors"/>
 		</Unit>
-		<Unit filename="/Users/yex/CPP/template/queue/monotonous/main.cpp">
+		<Unit filename="/Users/yex/CPP/Template/prime_filter/eratosthenes.cpp">
+			<Option target="eratosthenes"/>
+		</Unit>
+		<Unit filename="/Users/yex/CPP/Template/queue/monotonous/main.cpp">
 			<Option target="queue_monotonous"/>
 		</Unit>
-		<Unit filename="/Users/yex/CPP/template/quick_power/base/main.cpp">
+		<Unit filename="/Users/yex/CPP/Template/quick_power/base/main.cpp">
 			<Option target="quick_power"/>
 		</Unit>
-		<Unit filename="/Users/yex/CPP/template/quick_power/matrix/main.cpp">
+		<Unit filename="/Users/yex/CPP/Template/quick_power/matrix/main.cpp">
 			<Option target="quick_power_matrix"/>
 		</Unit>
-		<Unit filename="/Users/yex/CPP/template/quick_sort/base/main.cpp">
+		<Unit filename="/Users/yex/CPP/Template/quick_sort/base/main.cpp">
 			<Option target="quick_sort"/>
 		</Unit>
-		<Unit filename="/Users/yex/CPP/template/rand/base/main.cpp">
+		<Unit filename="/Users/yex/CPP/Template/rand/base/main.cpp">
 			<Option target="rand"/>
 		</Unit>
-		<Unit filename="/Users/yex/CPP/template/segment/base/main.cpp">
+		<Unit filename="/Users/yex/CPP/Template/rmq/base/main.cpp">
+			<Option target="rmq"/>
+		</Unit>
+		<Unit filename="/Users/yex/CPP/Template/scan_line/line.cpp">
+			<Option target="scan_line"/>
+		</Unit>
+		<Unit filename="/Users/yex/CPP/Template/segment/base/main.cpp">
 			<Option target="segment"/>
 		</Unit>
-		<Unit filename="/Users/yex/CPP/template/segment/interval_add/main.cpp">
+		<Unit filename="/Users/yex/CPP/Template/segment/interval_add/main.cpp">
 			<Option target="segment_interval_add"/>
 		</Unit>
-		<Unit filename="/Users/yex/CPP/template/segment/interval_max/main.cpp">
+		<Unit filename="/Users/yex/CPP/Template/segment/interval_add_x2/main.cpp">
+			<Option target="segment_interval_add_x2"/>
+		</Unit>
+		<Unit filename="/Users/yex/CPP/Template/segment/interval_max/main.cpp">
 			<Option target="segment_interval_max"/>
 		</Unit>
-		<Unit filename="/Users/yex/CPP/template/st/base/main.cpp">
-			<Option target="st"/>
-		</Unit>
-		<Unit filename="/Users/yex/CPP/template/subset/base/main.cpp">
+		<Unit filename="/Users/yex/CPP/Template/subset/base/main.cpp">
 			<Option target="subset"/>
 		</Unit>
-		<Unit filename="/Users/yex/CPP/template/trie/base/main.cpp">
+		<Unit filename="/Users/yex/CPP/Template/trie/base/main.cpp">
 			<Option target="trie"/>
 		</Unit>
-		<Unit filename="/Users/yex/CPP/template/CMakeLists.txt">
+		<Unit filename="/Users/yex/CPP/Template/trie/trie01.cpp">
+			<Option target="trie01"/>
+		</Unit>
+		<Unit filename="/Users/yex/CPP/Template/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

@@ -1,7 +1,7 @@
 //
 // Created by yex on 2023/3/26.
 //
-#include "../../main.h"
+#include "../../sum.h"
 #include "functional"
 
 int main() {

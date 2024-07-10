@@ -2,7 +2,7 @@
 // Created by liguoyang on 2023/2/28.
 //
 
-#include "../../main.h"
+#include "../../sum.h"
 
 namespace SEG_INTERVAL_1 {
     int f[40010];

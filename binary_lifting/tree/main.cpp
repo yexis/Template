@@ -1,4 +1,4 @@
-#include "../../main.h"
+#include "../../sum.h"
 
 // 树上倍增
 // 1. 快速计算树上第k个祖先

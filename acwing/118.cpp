@@ -2,7 +2,7 @@
 // Created by yex on 2023/8/26.
 //
 
-#include "../main.h"
+#include "../sum.h"
 
 int main() {
     return 0;

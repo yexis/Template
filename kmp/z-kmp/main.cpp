@@ -2,7 +2,7 @@
 // Created by liguoyang on 2023/5/6.
 //
 
-#include "../../main.h"
+#include "../../sum.h"
 
 // ͳ���ַ���s�����к�׺���ַ���suf_i �� �ַ���s����Ĺ�ͬǰ׺����
 namespace Z_1 {

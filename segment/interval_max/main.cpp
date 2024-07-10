@@ -2,7 +2,7 @@
 // Created by liguoyang on 2023/3/1.
 //
 
-#include "../../main.h"
+#include "../../sum.h"
 namespace SEG_INTERVAL_MAX_1 {
     int f[40010];
     int z[40010];
@@ -13,7 +13,7 @@ namespace SEG_INTERVAL_MAX_1 {
 
     void add(int o, int l, int r, int L, int R, int u) {
         if (L <= l && R >= r) {
-            f[o] = (r - l + 1) * u;
+            f[o] = u;
             z[o] = u;
             return;
         }

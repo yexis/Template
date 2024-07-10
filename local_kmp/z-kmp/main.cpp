@@ -2,7 +2,7 @@
 // Created by yex on 2023/5/6.
 //
 
-#include "../../main.h"
+#include "../../sum.h"
 
 namespace Z_1 {
     vector<int> z_kmp(string& s) {

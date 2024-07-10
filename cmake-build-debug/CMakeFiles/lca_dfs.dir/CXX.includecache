@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/Users/yex/CPP/template/lca/binary_lifting/dfs.cpp
+/Users/yex/CPP/Template/lca/binary_lifting/dfs.cpp
 ../../main.h
-/Users/yex/CPP/template/main.h
+/Users/yex/CPP/Template/main.h
 
-/Users/yex/CPP/template/main.h
+/Users/yex/CPP/Template/main.h
 iostream
 -
 vector
@@ -30,9 +30,9 @@ stack
 queue
 -
 algorithm
-/Users/yex/CPP/template/algorithm
+/Users/yex/CPP/Template/algorithm
 numeric
-/Users/yex/CPP/template/numeric
+/Users/yex/CPP/Template/numeric
 algorithm
-/Users/yex/CPP/template/algorithm
+/Users/yex/CPP/Template/algorithm
 

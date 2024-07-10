@@ -1,8 +1,8 @@
-#include  "../../main.h"
+#include  "../../sum.h"
 using namespace std;
 
 
-// x ÓÒ²àµÚ¶þ¸ö´óÓÚµÈÓÚ x µÄÔªËØ
+// x ï¿½Ò²ï¿½Ú¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Úµï¿½ï¿½ï¿½ x ï¿½ï¿½Ôªï¿½ï¿½
 namespace NHK_1 {
     vector<int> next_higher_k(vector<int>& nums) {
         int n = nums.size();

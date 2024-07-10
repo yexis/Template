@@ -1,7 +1,7 @@
 //
 // Created by liguoyang on 2023/3/16.
 //
-#include "../../main.h"
+#include "../../sum.h"
 
 namespace KMP_1 {
     vector<int> kmp(string& s) {

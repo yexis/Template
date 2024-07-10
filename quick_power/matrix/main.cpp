@@ -2,15 +2,16 @@
 // Created by liguoyang on 2023/9/11.
 //
 
-#include "../../main.h"
+#include "../../sum.h"
+
+using ll = long long;
+const int mod = 1e9 + 7;
+static constexpr int N = 2;
 
 namespace QP_1 {
-    using ll = long long;
-    static constexpr int N = 2;
-    const int mod = 1e9;
-    struct MA {
+    struct Ma {
         vector<vector<int>> v;
-        MA() {
+        Ma() {
             v.assign(N, vector<int>(N));
         }
         void init() {
@@ -18,8 +19,8 @@ namespace QP_1 {
                 v[i][i] = 1;
             }
         }
-        MA operator*(const MA& b) {
-            MA res;
+        Ma operator*(const Ma& b) {
+            Ma res;
             for (int i = 0; i < N; i++) {
                 for (int j = 0; j < N; j++) {
                     for (int k = 0; k < N; k++) {
@@ -31,11 +32,11 @@ namespace QP_1 {
             return res;
         }
 
-        MA operator^(int b) {
-            MA res;
+        Ma operator^(int b) {
+            Ma res;
             res.init();
 
-            MA a = *this;
+            Ma a = *this;
             while (b) {
                 if (b & 1) {
                     res = res * a;
@@ -49,12 +50,9 @@ namespace QP_1 {
 }
 
 namespace QP_2 {
-    using ll = long long;
-    const int mod = 1e9 + 7;
-    static constexpr int N = 2;
-    struct MA {
+    struct Ma {
         vector<vector<int>> v;
-        MA() {
+        Ma() {
             v.resize(N, vector<int>(N));
         }
         void init() {
@@ -62,8 +60,8 @@ namespace QP_2 {
                 v[i][i] = 1;
             }
         }
-        MA operator* (const MA& b) {
-            MA res;
+        Ma operator* (const Ma& b) {
+            Ma res;
             for (int i = 0 ; i < N; i++) {
                 for (int j = 0; j < N; j++) {
                     for (int k = 0; k < N; k++) {
@@ -75,10 +73,10 @@ namespace QP_2 {
             return res;
         }
 
-        MA operator^ (int b) {
-            MA res;
+        Ma operator^ (int b) {
+            Ma res;
             res.init();
-            MA a = *this;
+            Ma a = *this;
 
             while (b) {
                 if (b & 1) {
@@ -92,9 +90,49 @@ namespace QP_2 {
     };
 }
 
-using namespace QP_1;
+namespace QP_3 {
+    struct Ma {
+        vector<vector<int>> v;
+        Ma() {
+            v.resize(N, vector<int>(N));
+        }
+        void init() {
+            for (int i = 0; i < N; i++) {
+                v[i][i] = 1;
+            }
+        }
+        Ma operator* (const Ma& b) {
+            Ma res;
+            for (int i = 0; i < N; i++) {
+                for (int j = 0; j < N; j++) {
+                    for (int k = 0; k < N; k++) {
+                        res.v[i][j] += v[i][k] * b.v[k][j];
+                        res.v[i][j] %= mod;
+                    }
+                }
+            }
+            return res;
+        }
+        Ma operator^ (ll b) {
+            Ma res;
+            res.init();
+            Ma a = *this;
+
+            while (b) {
+                if (b & 1) {
+                    res = res * a;
+                }
+                a = a * a;
+                b >>= 1;
+            }
+            return res;
+        }
+    };
+}
+
+using namespace QP_3;
 void test() {
-    MA ma;
+    Ma ma;
     ma.v = {{1,1},{1,1}};
 
     ma = ma^4;

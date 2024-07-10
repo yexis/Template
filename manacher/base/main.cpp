@@ -1,7 +1,7 @@
 //
 // Created by liguoyang on 2023/3/21.
 //
-#include "../../main.h"
+#include "../../sum.h"
 
 namespace MANACHER_1 {
     vector<int> cal_d(string& s) {

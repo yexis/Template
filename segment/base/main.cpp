@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "../../main.h"
+#include "../../sum.h"
 
 using namespace std;
 
