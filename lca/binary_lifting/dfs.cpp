@@ -210,7 +210,6 @@ namespace BL_3 {
             }
         }
         return st[x][0];
-
     }
 }
 

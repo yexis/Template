@@ -16,5 +16,6 @@
 #include "algorithm"
 #include "numeric"
 #include "algorithm"
+#include "functional"
 using namespace std;
 #endif //TEMPLATE_SUM_H

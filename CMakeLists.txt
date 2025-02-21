@@ -1,7 +1,8 @@
 cmake_minimum_required(VERSION 3.17)
 project(template)
 
-set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_OSX_SYSROOT /Library/Developer/CommandLineTools/SDKs/MacOSX14.sdk)
 
 add_executable(template main.cpp)
 
@@ -14,7 +15,6 @@ add_executable(num_dp num_dp/base/main.cpp)
 
 add_executable(dijkstra dijkstra/base/main.cpp)
 
-# ������
 add_executable(bit_single_add bit/bit_single_add/main.cpp)
 add_executable(bit_interval_add bit/bit_interval_add/main.cpp)
 add_executable(bit_single_max bit/bit_single_max/main.cpp)
@@ -26,8 +26,6 @@ add_executable(trie01 trie/trie01.cpp)
 add_executable(comb_base comb/base/main.cpp)
 
 add_executable(comb_complicated comb/complicated/main.cpp)
-
-# add_executable(stack_monotonous stack/monotonous/main.cpp)
 
 add_executable(queue_monotonous queue/monotonous/main.cpp)
 
@@ -79,3 +77,9 @@ add_executable(p4648 luogu/p4648.cpp)
 add_executable(scan_line scan_line/line.cpp)
 
 add_executable(eratosthenes prime_filter/eratosthenes.cpp)
+
+add_executable(cantor cantor/main.cpp)
+add_executable(reverse cantor/reverse.cpp)
+add_executable(main main.cpp)
+add_executable(ek network_flow/maximum_flow/ek.cpp)
+add_executable(dinic network_flow/maximum_flow/dinic.cpp)

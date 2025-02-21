@@ -1,47 +1,57 @@
+#include <cstdio>
+#include <cstring>
 #include <iostream>
-#include <queue>
-#include <array>
-#include <unordered_map>
 using namespace std;
+const int MOD = 998244353;
+typedef long long ll;
+int n, x, d[1000005];
+ll fac[1000005], ans;
 
-#include <iostream>
-#include <vector>
-#include <string>
-#include <unordered_map>
-using namespace std;
+inline int lowbit(int x) { return x & -x; }
 
-vector<string> partitionLabels(string s) {
-    vector<int> last_occurrence(26, 0);
+int read() {
+    int x = 0;
+    char c = getchar();
+    while (c < '0' || c > '9') c = getchar();
+    while (c >= '0' && c <= '9') x = x * 10 + c - '0', c = getchar();
+    return x;
+}
 
-    // 记录每个字符最后出现的位置
-    for (int i = 0; i < s.size(); ++i) {
-        last_occurrence[s[i] - 'a'] = i;
+void modify(int x, int o) {
+    while (x <= n) {
+        d[x] += o;
+        x += lowbit(x);
     }
+}
 
-    vector<string> partitions;
-    int start = 0, end = 0;
-
-    for (int i = 0; i < s.size(); ++i) {
-        // 更新当前字符的最远出现位置
-        end = max(end, last_occurrence[s[i] - 'a']);
-
-        // 如果当前索引等于最远出现位置，找到一个分割点
-        if (i == end) {
-            partitions.push_back(s.substr(start, end - start + 1));
-            start = i + 1;
-        }
+int query(int x) {
+    int ret = 0;
+    while (x >= 1) {
+        ret += d[x];
+        x -= lowbit(x);
     }
-
-    return partitions;
+    return ret;
 }
 
 int main() {
-    string s = "adefaddaccc";
-    vector<string> result = partitionLabels(s);
-
-    for (const string& partition : result) {
-        cout << partition << " ";
+    n = read();
+    fac[0] = 1;
+    for (int i = 1; i <= n; ++i) {
+        d[i] = lowbit(i);                 // O(n) 建树
+        fac[i] = (fac[i - 1] * i) % MOD;  // 预处理阶乘
     }
-    // 输出: ababcbaca defegde hijhklij
-    return 0;
+
+    for (int i = 0; i < 10; i++) {
+        std::cout << d[i] << " ";
+    }
+    std::cout << "\n";
+
+    for (int i = 1; i <= n; ++i) {
+        x = read();
+        cout << "before:" << query(x) << "\n";
+        modify(x, -1);
+        cout << "after:" << query(x) << "\n";
+        ans = (ans + ll(query(x) * fac[n - i]) % MOD) % MOD;
+    }
+    printf("%d\n", ans + 1);
 }
