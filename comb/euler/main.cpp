@@ -145,12 +145,14 @@ struct Euler {
                 p[j][i] = p[j][i - 1] + e[j];
             }
         }
-        // 方法一：计算逆元
+        // 计算逆元
+
+        // 方法一：欧拉定理 x^{-1} = x^{\phi(m)-1} (mod m)
         // for (int i = 0; i <= maxn; i++) {
         //     inv[i] = power(f[i], phi - 1);
         // }
 
-        // 方法二： 逆推
+        // 方法二： 逆推 (x!)^{-1} = ((x+1)!)^{-1} * (x + 1) (mod m)
         inv[maxn] = power(f[maxn], phi - 1);
         for (int i = maxn; i > 0; i--) {
             int x = i;
