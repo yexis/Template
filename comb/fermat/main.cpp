@@ -6,6 +6,12 @@
 #include <vector>
 using namespace std;
 
+/*
+ * 费马小定理
+ * 费马小定理计算组合数 
+ * 适用于模数为质数的情况
+*/
+
 typedef long long ll;
 constexpr int mod = 1e9 + 7;
 namespace CC_1 {
