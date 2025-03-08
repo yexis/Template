@@ -79,8 +79,8 @@ struct Euler {
     // 例如: x = d * d * d * x0 【gcd(x0, d) = 1】 表示 x 中有 3 个 d
     vector<array<int, cmaxn> > p; 
     Euler(int _m) : mod(_m), phi(0) {
+        cal_phi_2();
         cal_prime();
-        cal_phi();
         init();
     }
 
@@ -99,7 +99,7 @@ struct Euler {
         return ans;
     }
 
-    // 计算phi值: O(mod)
+    // 方法1：计算phi值: O(mod)
     void cal_phi() {
         for (int d = 1; d <= mod; d++) {
             if (gcd(d, mod) == 1) {
@@ -109,7 +109,26 @@ struct Euler {
         if (debug) cout << "phi:" << phi << "\n";
     }
 
+    // 方法2：计算phi值: O(sqrt(mod))
+    void cal_phi_2() {
+        phi = mod;
+        int x = mod;
+        for (int i = 2; i * i <= x; i++) {
+            if (x % i == 0) {
+                phi = phi * (i - 1) / i;
+                while (x % i == 0) {
+                    x /= i;
+                }
+            }
+        }
+        if (x > 1) {
+            phi = phi * (x - 1) / x;
+        }
+        if (debug) cout << "phi:" << phi << "\n";
+    }
+
     // 质因数分解，便于将x化简后与mod互质
+    // 可同时计算出phi值: O(sqrt(mod))
     void cal_prime() {
         int x = mod;
         for (int i = 2; i * i <= maxn; i++) {
@@ -207,8 +226,10 @@ public:
 
 
 void solve() {
-    Euler el(10);
-    cout << el.C(10, 2) << "\n";
+    const int m = 1000000007;
+    Euler el(m);
+    el.cal_phi_2();
+    cout << el.phi << "\n";
     return;
 }
 
