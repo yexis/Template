@@ -4,6 +4,38 @@
 #include <numeric>
 using namespace std;
 
+struct DJ {
+    vector<int> fa;
+    vector<int> ra;
+    int n;
+    void init(int _n) {
+        n = _n;
+        fa.resize(n);
+        ra.resize(n);
+        iota(fa.begin(), fa.end(), 0);
+    }
+    int find(int x) {
+        if (x != fa[x]) {
+            fa[x] = find(fa[x]);
+        }
+        return fa[x];
+    }
+    void merge(int x, int y) {
+        int rx = find(x);
+        int ry = find(y);
+        if (rx == ry) {
+            return;
+        }
+        if (ra[rx] < ra[ry]) {
+            swap(rx, ry);
+        }
+        fa[ry] = rx;
+        if (ra[rx] == ra[ry]) {
+            ra[rx]++;
+        }
+    }
+};
+
 namespace DJ {
     class DJset {
     public:
