@@ -89,11 +89,19 @@ ll power(ll x, ll b, ll m = mod) {
  * 2 1 1 | 7
  * 2 2 1 | 9
  * 
+ * 增广矩阵
  * ans:alignas
  * 1.00 0.50 0.50 | x1 = 1.00 
  * 0.00 1.00 0.50 | x2 = 2.00 
  * 0.00 0.00 1.00 | x3 = 3.00 
+ * 
+ * 
+ * 问题：如何判断无穷多解和无解
 */
+
+
+// 以下版本只能判断方程是否具有唯一解
+// 无法区分出无穷多解和无解的情况
 const double eps = 0.00000001;
 bool gauss(vector<vector<double>>& ma) {
     // ma: 增广矩阵，包含a和b
@@ -128,28 +136,116 @@ bool gauss(vector<vector<double>>& ma) {
             ma[i][n] -= ma[i][j] * ma[j][n];
         }
     }
+
     return true;
+}
+
+// 能判断方程组具有多少解
+// 返回0: 表示方程组无解
+// 返回1: 表示方程组具有唯一解
+// 返回2: 表示方程组具有无数解
+vector<double> x;
+int gauss2(vector<vector<double>>& a) {
+    // a是n行n+1列行列式
+    int n = a.size();
+    
+    // 每列的主元在哪一行
+    // 即每个未知数x的主元在哪
+    vector<int> where(n, -1); 
+
+    // 遍历每列，找到其主元所在行
+    for (int col = 0, row = 0; col < n && row < n; ++col) {
+        // 找到当前列不为0的行
+        int sel = row;
+        for (int i = row; i < n; ++i) {
+            if (fabs(a[i][col]) > eps) {
+                sel = i;
+                break;
+            }
+        }
+
+        swap(a[sel], a[row]);
+        if (fabs(a[row][col]) < eps) continue;
+        where[col] = row;
+
+        // 将a[row][col]变成1，同行其他元素同变
+        for (int j = n; j >= col; j--) {
+            a[row][j] /= a[row][col];
+        }
+        // 将同列其他元素变为0
+        for (int i = row + 1; i < n; i++) {
+            // 倒序
+            for (int j = n; j >= col; j--) {
+                a[i][j] -= a[i][col] * a[row][j];
+            }
+        }
+        ++row;
+    }
+
+
+    // 回代
+    x.assign(n, 0);
+    for (int i = n - 1; i >= 0; --i) {
+        if (where[i] == -1) continue;
+        double sum = a[where[i]][n];
+        for (int j = i + 1; j < n; ++j)
+            sum -= a[where[i]][j] * x[j];
+        x[i] = sum / a[where[i]][i];
+    }
+
+    // 检查无解
+    for (int i = 0; i < n; ++i) {
+        double sum = 0;
+        for (int j = 0; j < n; ++j) {
+            sum += x[j] * a[i][j];
+        }
+        if (fabs(sum - a[i][n]) > eps) {
+            return 0; // 无解
+        }
+    }
+
+    // 判断是否无穷多解
+    for (int i = 0; i < n; ++i) {
+        if (where[i] == -1) {
+            return 2; // 无穷多解（自由变量）
+        }
+    }
+
+    return 1; // 唯一解
+}
+
+
+void solve() {
+    int n; cin >> n;
+    vector<vector<double>> ma(n, vector<double>(n + 1));
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j <= n; j++) {
+            cin >> ma[i][j];
+        }
+    }
+
+    int flg = gauss2(ma);
+    if (flg == 0) {
+        // 无解
+        // cout << "no answer" << "\n";
+        cout << -1 << "\n";
+    } else if (flg == 1) {
+        // 唯一解
+        // cout << "unique solution" << "\n";
+        for (int i = 0; i < n; i++) {
+            cout << "x" << i + 1 << "=" << x[i] << "\n";
+        }
+    } else {
+        // 无穷多解
+        // cout << "Infinite solutions\n";
+        cout << 0 << "\n";
+    }
 }
 
 int main() {
     ios;
-    cout << fixed << setprecision(2);
-    vector<vector<double>> ma = {
-      {0, 2, 1, 7},  
-      {2, 1, 1, 7},  
-      {2, 2, 1, 9},  
-    };
-    bool flg = gauss(ma);
-    if (flg) {
-        for (auto& es : ma) {
-            for (auto& e : es) {
-                cout << e << " ";
-            }
-            cout << "\n";
-        }
-    } else {
-        cout << "no answer" << "\n";
-    }
+    cout << fixed << setprecision(20);
+    solve();
     return 0;
 }
 
