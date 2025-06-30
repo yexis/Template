@@ -145,8 +145,8 @@ bool gauss(vector<vector<double>>& ma) {
 // 返回1: 表示方程组具有唯一解
 // 返回2: 表示方程组具有无数解
 vector<double> x;
-int gauss2(vector<vector<double>>& a) {
-    // a是n行n+1列行列式
+int gauss2(vector<vector<double>> a) {
+    // a是n行n+1列矩阵
     int n = a.size();
     
     // 每列的主元在哪一行
@@ -211,9 +211,81 @@ int gauss2(vector<vector<double>>& a) {
         }
     }
 
-    return 1; // 唯一解
+    // 唯一解
+    return 1;
 }
 
+
+// vector<double> x;
+int gauss3(vector<vector<double>> a) {
+    // a是n行n+1列行列式
+    int n = a.size();
+    
+    // 如果第j列存在主元，尽量让其处于第j行
+
+    // 即每个未知数x的主元在哪一列
+    vector<int> where(n, -1); 
+    // 记录第i行是否被选作主元行
+    vector<int> used(n, 0);
+
+    // 遍历每列，找到其主元所在行
+    for (int i = 0; i < n; i++) {
+        int to_i = i;
+        for (int i1 = 0; i1 < n; i1++) {
+            // 只访问没有成为主元行的行
+            if (i1 != i && !used[i1] && fabs(a[i1][i]) > eps) {
+                to_i = i1;
+                break;
+            }
+        }
+        if (to_i != i) swap(a[to_i], a[i]);
+        if (fabs(a[i][i]) < eps) continue;
+        where[i] = i; used[i] = true;
+
+        // 将a[row][col]变成1，同行其他元素同变
+        for (int j = n; j >= i; j--) {
+            a[i][j] /= a[i][i];
+        }
+        // 将同列其他元素变为0，只消除i下面的部分
+        for (int i1 = i + 1; i1 < n; i1++) {
+            for (int j = n; j >= i; j--) {
+                a[i1][j] -= a[i1][i] * a[i][j];
+            }
+        }
+    }
+
+    // 回代
+    x.assign(n, 0);
+    for (int i = n - 1; i >= 0; --i) {
+        if (where[i] == -1) continue;
+        double sum = a[i][n];
+        for (int j = i + 1; j < n; ++j) {
+            sum -= a[i][j] * x[j];
+        }
+        x[i] = sum;
+    }
+
+    // 检查无解
+    for (int i = 0; i < n; ++i) {
+        double sum = 0;
+        for (int j = 0; j < n; ++j) {
+            sum += x[j] * a[i][j];
+        }
+        if (fabs(sum - a[i][n]) > eps) {
+            return 0; // 无解
+        }
+    }
+
+    // 判断是否无穷多解
+    for (int i = 0; i < n; ++i) {
+        if (where[i] == -1) {
+            return 2; // 无穷多解（自由变量）
+        }
+    }
+    
+    // 唯一解
+    return 1;
+}
 
 void solve() {
     int n; cin >> n;
@@ -224,12 +296,29 @@ void solve() {
         }
     }
 
-    int flg = gauss2(ma);
-    if (flg == 0) {
+    // int flg = gauss2(ma);
+    // if (flg == 0) {
+    //     // 无解
+    //     // cout << "no answer" << "\n";
+    //     cout << -1 << "\n";
+    // } else if (flg == 1) {
+    //     // 唯一解
+    //     // cout << "unique solution" << "\n";
+    //     for (int i = 0; i < n; i++) {
+    //         cout << "x" << i + 1 << "=" << x[i] << "\n";
+    //     }
+    // } else {
+    //     // 无穷多解
+    //     // cout << "Infinite solutions\n";
+    //     cout << 0 << "\n";
+    // }
+
+    int flg3 = gauss3(ma);
+    if (flg3 == 0) {
         // 无解
         // cout << "no answer" << "\n";
         cout << -1 << "\n";
-    } else if (flg == 1) {
+    } else if (flg3 == 1) {
         // 唯一解
         // cout << "unique solution" << "\n";
         for (int i = 0; i < n; i++) {
@@ -250,6 +339,26 @@ int main() {
 }
 
 
+/*
+4
+1 1 1 1 5
+1 0 5 4 11 
+0 0 2 3 5
+0 0 9 2 11
+
+2 
+0 0 0
+0 2 3
+
+2
+1 1 2
+0 1 3
+
+3
+0 1 0 2
+0 0 1 3
+0 0 0 0
+*/
 
 
 
