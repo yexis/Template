@@ -84,6 +84,8 @@ ll power(ll x, ll b, ll m = mod) {
  * 讲解：https://www.bilibili.com/video/BV1Kd4y127vZ/?spm_id_from=333.1387.search.video_card.click&vd_source=a5e205ce7c5908e561eb8023831ffff2
  * 现将矩阵转化成上三角的矩阵，然后逆推得出结果
  * 
+ * 洛谷P2455: https://www.luogu.com.cn/problem/P2455
+ * 
  * ma:
  * 0 2 1 | 7
  * 2 1 1 | 7
