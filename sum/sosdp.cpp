@@ -131,6 +131,54 @@ ll power(ll x, ll b, ll m = mod) {
  * 
 */
 
+// 应用场景一
+// 找出数组a[i] * a[j] 的最大乘积
+// 要求 i, j 不相同，且 a[i] 和 a[j] 无公共置位
+// 要求没有公共置位，说明 a[i] 和 a[j] 互为对方补集的子集
+void sosdp_max(vector<int>& a) {
+    int n = a.size();
+    int mx = *max_element(a.begin(), a.end());
+
+    int m = 32 - __builtin_clz(mx);
+    int f[1 << m]; memset(f, 0, sizeof(f));
+    for (auto& e : a) f[e] = e;
+
+    for (int d = 0; d < m; d++) {
+        for (int mask = 0; mask < (1 << m); mask++) {
+            if (mask >> d & 1) {
+                f[mask] = max(f[mask], f[mask ^ (1 << d)]);
+            }
+        }
+    }
+    // 此时，f[mask] 表示 mask 及其所有二进制子集的最大值
+
+    ll ans = 0;
+    for (int i = 0; i < n; i++) {
+        ans = max(ans, (ll)a[i] * f[((1 << m) - 1) ^ a[i]]);
+    }
+    return ans;
+}
+
+// 应用场景二
+// 找出mask及其所有二进制子集的和
+void sosdp_max(vector<int>& a) {
+    int n = a.size();
+    int mx = *max_element(a.begin(), a.end());
+
+    int m = 32 - __builtin_clz(mx);
+    int f[1 << m]; memset(f, 0, sizeof(f));
+    for (auto& e : a) f[e] = e;
+
+    for (int d = 0; d < m; d++) {
+        for (int mask = 0; mask < (1 << m); mask++) {
+            if (mask >> d & 1) {
+                f[mask] += f[mask ^ (1 << d)];
+            }
+        }
+    }
+    // 此时，f[mask] 表示 mask 及其所有二进制子集的和
+}
+
 void solve() {
     int n; cin >> n;
     vector<int> a(n); for (auto& e : a) cin >> e;
