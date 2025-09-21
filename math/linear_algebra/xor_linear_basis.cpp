@@ -70,10 +70,10 @@ ll power(ll x, ll b, ll m = mod) {
     while (b) {
         if (b & 1) {
             ans *= x;
-            ans %= m;
+            if (m) ans %= m;
         }
         x *= x;
-        x %= m;
+        if (m) x %= m;
         b >>= 1;
     }
     return ans;
@@ -82,56 +82,192 @@ ll power(ll x, ll b, ll m = mod) {
 /*
  * 异或线性基
  * 高斯消元法
+ * 
+ * 性质一：设线性基组中一共有k个元素len(b) = k，则该组线性基能表示 2^k-1 个不同元素
+ * 性质二：若len(b) < len(a)，说明一定能线性基表示出0
+ * 性质三：线性基中组中的基 逆序排列
+ * 性质四：线性基的任意子集的异或和不为0
 */
 
+int n;
 int row = 0; // row: 记录基向量的个数
-vector<ll> b; // b: 记录每个基向量
+vector<ll> b; // b: 记录每个基向量, b[0, row-1]表示所有基向量
 vector<ll> bit; // bit: 记录第i位为1的基向量
 void gauss(vector<ll>& a) {
     row = 0;
+    n = a.size();
     b = a;
-    bit = vector<ll>(63, 0);
-    int n = b.size();
-    for (int i = 62; i >= 0; i--) {
+    bit = vector<ll>(64, 0);
+
+    for (int i = 63; i >= 0; i--) {
+        // 找到当前列(位)为1的行
         for (int j = row; j < n; j++) {
             if (b[j] >> i & 1) {
                 swap(b[row], b[j]);
                 break;
             }
         }
+        // 不存在，跳过
         if ((b[row] >> i & 1) == 0) {
             continue;
         }
+        // 将其他所有元素的该位的1消掉
         for (int j = 0; j < n; j++) {
             if (j != row && (b[j] >> i & 1)) {
                 b[j] ^= b[row];
             }
         }
+        // 第i位为1的线性基
         bit[i] = b[row];
         row++; 
+        // 线性基的数量不可能超过n
         if (row == n) break;
     }
 }
 
-bool contains(vector<ll>& base, ll x) {
+// 判断元素x能否被线性基表示
+bool contains(ll x) {
     for (int i = 62; i >= 0; i--) {
         if (x >> i & 1) {
-            if (base[i]) x ^= base[i];
+            if (bit[i]) x ^= bit[i];
         }
     }
     return x == 0;
 }
 
+// 计算线性基能表示的第k小，k从1开始
+// 寻找[k小值]时，注意0能否被表示
+ll k_min(ll k) {
+    // 能表示出0，所以将k--，把0去掉
+    if (row < n) k--;
+    if (((ll)1 << row) - 1 < k) return -1;
+    
+    ll ans = 0;
+    for (int i = 0; i < row; i++) {
+        if (k >> i & 1) {
+            ans ^= b[row - i - 1];
+        }
+    }
+    return ans;
+}
+
+// 计算线性基能表示的第k大，k从1开始
+// 寻找[k大值]时，0在最后
+ll k_max(ll k) {
+    ll tot = (1ll << row) - 1;
+    if (row < n) tot++;
+    if (k > tot) return -1;
+    // 第 k 大 = 第 tot - k + 1 小
+    return k_min(tot - k + 1);
+} 
+
+// 计算线性基能表示的元素中，x的排名
+ll rank(ll x) {
+    // 先判断x能否表线性基表示
+    if (!contains(x)) {
+        return -1;
+    }
+    if (row < n) x--;
+    // 二分
+    ll ans = 0;
+    ll l = 1, r = power(2, row, 0) - 1;
+    while (l <= r) {
+        ll mid = (l + r) >> 1;
+        ll tmp = 0;
+        for (int i = 0; i < row; i++) {
+            if (mid >> i & 1) {
+                tmp ^= b[i];
+            }
+        }
+        if (tmp <= x) {
+            ans = mid;
+            l = mid + 1;
+        } else {
+            r = mid - 1;
+        }
+    }
+    return ans;
+}
+
+// 计算线性基能表示的最大数
+// 即 线性基所有元素的异或和
+ll cal_max() {
+    ll ans = 0;
+    for (auto& e : b) ans ^= e;
+    return ans;
+}
+
+ll cal_min() {
+    return k_min(1);
+}
+
+// https://ac.nowcoder.com/acm/contest/111922/F
 void solve() {
-    vector<ll> a = {1,2,3,4,5,6,7,8,9,10};
+    auto cal = [&]() -> void {
+        int n; cin >> n;
+        vector<ll> a(n);
+        for (auto& e : a) cin >> e;
+        gauss(a);
+
+        ll x = 1;
+        while (contains(x)) {
+            x *= 2;
+        }
+        cout << x << "\n";
+    };
+
+    int T; cin >> T;
+    while (T--) {
+        cal();
+    }
+    cout << "\n";
+}
+
+// https://acm.hdu.edu.cn/showproblem.php?pid=3949
+void solve_hdu_3949() {
+    int case_idx = 0;
+    auto cal = [&]() -> void {
+        printf("Case #%d:\n", ++case_idx);
+        int n; cin >> n;
+        vector<ll> a(n); 
+        for (auto& e : a) cin >> e;
+        gauss(a);
+
+        int q; cin >> q;
+        while (q--) {
+            ll k; cin >> k;
+            cout << k_min(k) << "\n";
+        }
+    };
+
+    int T; cin >> T;
+    while (T--) {
+        cal();
+    }
+}
+
+
+void solve_cal_max() {
+    vector<ll> a = {5, 6, 7};
     gauss(a);
-    for (int i = 0; i < row; i++) cout << b[i] << " "; cout << "\n";
+    cout << cal_max() << "\n";
+}
+
+void solve_k_max() {
+    vector<ll> a = {1,2,4,8,16,16};
+    gauss(a);
+    for (auto& e : b) cout << e << " "; cout << "\n";
+    cout << k_max(2) << "\n";
 }
 
 int main() {
     ios;
     cout << fixed << setprecision(20);
-    solve();
+    
+    // solve();
+    // solve_hdu_3949();
+    // solve_cal_max();
+    solve_k_max();
     return 0;
 }
 
