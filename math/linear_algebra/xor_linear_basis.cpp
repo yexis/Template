@@ -162,24 +162,22 @@ ll k_max(ll k) {
 } 
 
 // 计算线性基能表示的元素中，x的排名
-ll rank(ll x) {
+// 未验证过，感觉是对的
+ll cal_rank(ll x) {
     // 先判断x能否表线性基表示
     if (!contains(x)) {
         return -1;
     }
-    if (row < n) x--;
+
     // 二分
-    ll ans = 0;
-    ll l = 1, r = power(2, row, 0) - 1;
+    ll ans = -1;
+    
+    ll l = 1, r = (1ll << row) - 1;
+    if (row < n) r++;
+
     while (l <= r) {
         ll mid = (l + r) >> 1;
-        ll tmp = 0;
-        for (int i = 0; i < row; i++) {
-            if (mid >> i & 1) {
-                tmp ^= b[i];
-            }
-        }
-        if (tmp <= x) {
+        if (k_min(mid) <= x) {
             ans = mid;
             l = mid + 1;
         } else {
@@ -197,6 +195,8 @@ ll cal_max() {
     return ans;
 }
 
+// 计算线性基能表示的最小数
+// 即 第1小的元素
 ll cal_min() {
     return k_min(1);
 }
@@ -260,6 +260,12 @@ void solve_k_max() {
     cout << k_max(2) << "\n";
 }
 
+void solve_rank() {
+    vector<ll> a = {1,2,4,8,16};
+    gauss(a);
+    cout << cal_rank(15) << "\n";
+}
+
 int main() {
     ios;
     cout << fixed << setprecision(20);
@@ -267,7 +273,8 @@ int main() {
     // solve();
     // solve_hdu_3949();
     // solve_cal_max();
-    solve_k_max();
+    // solve_k_max();
+    solve_rank();
     return 0;
 }
 
