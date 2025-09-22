@@ -125,6 +125,14 @@ void gauss(vector<ll>& a) {
     }
 }
 
+// 计算异或和的方案数
+ll cal_cnt() {
+    // 能表示0
+    if (row < n) return 1ll << row;
+    // 无法表示0
+    return (1ll << row) - 1;
+}
+
 // 判断元素x能否被线性基表示
 bool contains(ll x) {
     for (int i = 62; i >= 0; i--) {
