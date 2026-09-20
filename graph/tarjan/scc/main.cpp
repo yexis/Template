@@ -82,7 +82,9 @@ ll power(ll x, ll b, ll m = mod) {
  * SCC缩点
  * 性质：
  * 1. 相当于每个强连通分量有一个根，即每个强连通分量中dfn最小的节点，即scc[i] = low[i]的点
- * 2. 
+ * 2. 用新点构建拓扑图，scc的团号是拓扑逆序的，即团号越大的点，越靠前（因为scc时是逆序的）
+ * 
+ * https://www.luogu.com.cn/problem/P2812
 */
 
 struct TarjanSCC {
@@ -91,7 +93,8 @@ struct TarjanSCC {
     // 编号都从1开始
     int tot, cnt;
 
-    vector<vector<int>> g;
+    // 原图，缩点后的scc图
+    vector<vector<int>> g, ng;
     
     // 时间戳，追溯值
     vector<int> dfn, low; 
@@ -105,19 +108,19 @@ struct TarjanSCC {
     // 记录强连通分量入度和出度
     vector<int> deg_in, deg_out;
 
-    TarjanSCC(vector<vector<int>>& gg) {
-        tot = cnt = 0;
-        g = gg, n = g.size();
-        dfn.resize(n); low.resize(n);
+    TarjanSCC(int nn) {
+        tot = cnt = 0; n = nn;
+        g.resize(n); ng.resize(n);
+        dfn.resize(n, -1); low.resize(n);
         in_stk.resize(n);
-        scc.resize(n), siz.resize(n + 1);
-        deg_in.resize(n + 1); deg_out.resize(n + 1);
+        scc.resize(n, -1), siz.resize(n);
+        deg_in.resize(n); deg_out.resize(n);
     }
     void tarjan(int x) {
-        dfn[x] = low[x] = ++tot;
+        dfn[x] = low[x] = tot++;
         stk.push_back(x); in_stk[x] = 1;
         for (auto& y : g[x]) {
-            if (!dfn[y]) {
+            if (dfn[y] == -1) {
                 tarjan(y);
                 low[x] = min(low[x], low[y]);
             } else if (in_stk[y]) {
@@ -126,15 +129,13 @@ struct TarjanSCC {
         }
         // 若x是scc的根
         if (dfn[x] == low[x]) {
-            int y; ++cnt;
+            int y;
             while (true) {
-                y = stk.back();
-                stk.pop_back();
-                in_stk[y] = 0;
-                scc[y] = cnt;
-                ++siz[cnt];
+                y = stk.back(); stk.pop_back(); in_stk[y] = 0;
+                scc[y] = cnt; ++siz[cnt];
                 if (y == x) break;
             }
+            cnt++;
         }
     }
 };
@@ -142,16 +143,15 @@ struct TarjanSCC {
 
 void solve() {
     int n; cin >> n;
-    vector<vector<int>> g(n);
+    TarjanSCC tj(n);
+
     for (int i = 0; i < n; i++) {
         int j;
         while (cin >> j, j) {
             j--;
-            g[i].push_back(j);
+            tj.g[i].push_back(j);
         }
     }
-
-    TarjanSCC tj(g);
 
     auto& dfn = tj.dfn;
     auto& low = tj.low;
@@ -160,11 +160,11 @@ void solve() {
     auto& deg_out = tj.deg_out;
 
     for (int i = 0; i < n; i++) {
-        if (!tj.dfn[i]) tj.tarjan(i);
+        if (tj.dfn[i] == -1) tj.tarjan(i);
     }
 
     for (int x = 0; x < n; x++) {
-        for (int y : g[x]) {
+        for (int y : tj.g[x]) {
             if (scc[x] != scc[y]) {
                 deg_in[scc[y]]++;
                 deg_out[scc[x]]++;
@@ -173,7 +173,7 @@ void solve() {
     }
 
     int a = 0, b = 0;
-    for (int i = 1; i <= tj.cnt; i++) {
+    for (int i = 0; i < tj.cnt; i++) {
         if (!deg_in[i]) a++;
         if (!deg_out[i]) b++;
     }

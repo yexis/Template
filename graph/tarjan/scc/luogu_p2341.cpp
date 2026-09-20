@@ -103,19 +103,19 @@ struct TarjanSCC {
     // 记录强连通分量入度和出度
     vector<int> deg_in, deg_out;
 
-    TarjanSCC(vector<vector<int>>& gg) {
-        tot = cnt = 0;
-        g = gg, n = g.size();
-        dfn.resize(n); low.resize(n);
+    TarjanSCC(int nn) {
+        tot = cnt = 0; n = nn;
+        g.resize(n);
+        dfn.resize(n, -1); low.resize(n);
         in_stk.resize(n);
-        scc.resize(n), siz.resize(n + 1);
-        deg_in.resize(n + 1); deg_out.resize(n + 1);
+        scc.resize(n, -1), siz.resize(n);
+        deg_in.resize(n); deg_out.resize(n);
     }
     void tarjan(int x) {
-        dfn[x] = low[x] = ++tot;
+        dfn[x] = low[x] = tot++;
         stk.push_back(x); in_stk[x] = 1;
         for (auto& y : g[x]) {
-            if (!dfn[y]) {
+            if (dfn[y] == -1) {
                 tarjan(y);
                 low[x] = min(low[x], low[y]);
             } else if (in_stk[y]) {
@@ -124,12 +124,13 @@ struct TarjanSCC {
         }
         // 若x是scc的根
         if (dfn[x] == low[x]) {
-            int y; ++cnt;
+            int y; 
             while (true) {
                 y = stk.back(); stk.pop_back(); in_stk[y] = 0;
                 scc[y] = cnt; ++siz[cnt];
                 if (y == x) break;
             }
+            cnt++;
         }
     }
 };
@@ -137,20 +138,18 @@ struct TarjanSCC {
 
 void solve() {
     int n, m; cin >> n >> m;
-    vector<vector<int>> g(n);
+    TarjanSCC tj(n);
     for (int i = 0; i < m; i++) {
         int u, v; cin >> u >> v; u--, v--;
-        g[u].push_back(v); 
+        tj.g[u].push_back(v); 
     }
 
-    TarjanSCC tj(g);
-
     for (int i = 0; i < n; i++) {
-        if (!tj.dfn[i]) tj.tarjan(i);
+        if (tj.dfn[i] == -1) tj.tarjan(i);
     }
 
     for (int x = 0; x < n; ++x) {
-        for (int y : g[x]) {
+        for (int y : tj.g[x]) {
             if (tj.scc[x] != tj.scc[y]) {
                 ++tj.deg_out[tj.scc[x]];
             }
@@ -163,7 +162,7 @@ void solve() {
     // }
     
     int sum = 0, zeros = 0;
-    for (int i = 1; i <= tj.cnt; i++) {
+    for (int i = 0; i < tj.cnt; i++) {
         if (tj.deg_out[i] == 0) {
             sum = tj.siz[i];
             ++zeros;
