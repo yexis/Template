@@ -96,11 +96,12 @@ struct EulerPath {
 
     // 栈，后序输出
     stack<int> stk;
+    vector<int> ptr;
 
     EulerPath(int nn, int mm) {
         n = nn, m = mm;
         edge_id = 0; g.resize(n); deg.resize(n);
-        del.resize(2 * m);
+        del.resize(2 * m); ptr.resize(n);
     }
     void add_edge(int u, int v) {
         edges.push_back({u, v});
@@ -114,16 +115,18 @@ struct EulerPath {
         }
     }
     void dfs(int u) {
-        for (auto [v, id] : g[u]) {
+        for (int i = ptr[u]; i < g[u].size(); i = ptr[u]) {
+            ptr[u] = i + 1;
+            auto [v, id] = g[u][i];
             if (!del[id]) {
-                // 删除当前边与反边
-                del[id] = del[id^1] = true;
+                del[id] = del[id ^ 1] = true;
                 dfs(v);
             }
+            
         }
         stk.push(u);
     }
-};
+}; 
 
 void solve() {
     int n = 500;

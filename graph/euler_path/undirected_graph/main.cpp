@@ -79,9 +79,7 @@ ll power(ll x, ll b, ll m = mod) {
 }
 
 /*
- * 无向图
- * 欧拉路径
- * 欧拉回路
+ * 
 */
 
 struct EulerPath {
@@ -96,11 +94,12 @@ struct EulerPath {
 
     // 栈，后序输出
     stack<int> stk;
+    vector<int> ptr;
 
     EulerPath(int nn, int mm) {
         n = nn, m = mm;
         edge_id = 0; g.resize(n); deg.resize(n);
-        del.resize(2 * m);
+        del.resize(2 * m); ptr.resize(n);
     }
     void add_edge(int u, int v) {
         edges.push_back({u, v});
@@ -108,48 +107,82 @@ struct EulerPath {
         g[v].push_back(pii(u, edge_id++));
         deg[u]++, deg[v]++;
     }
+    // 注意：边的排序规则
     void sort_edges() {
         for (auto& es : g) {
             sort(es.begin(), es.end());
         }
     }
     void dfs(int u) {
-        for (auto [v, id] : g[u]) {
+        for (int i = ptr[u]; i < g[u].size(); i = ptr[u]) {
+            ptr[u] = i + 1;
+            auto [v, id] = g[u][i];
             if (!del[id]) {
-                // 删除当前边与反边
-                del[id] = del[id^1] = true;
+                del[id] = del[id ^ 1] = true;
                 dfs(v);
             }
+            
         }
         stk.push(u);
     }
-};
+    bool is_valid(int& start, int& end) {
+        int bad = 0; // 入度不等于出度的点数
+        start = -1, end = -1;
+        for (int i = 0; i < n; i++) {
+            if (deg[i] % 2 == 0) continue;
+            bad++;
+            if (start == -1) start = i;
+            else if (end == -1) end = i;
+        } 
+        if (bad == 1 || bad > 2) return false;
+        // 注意：bad只能是0（欧拉回路）或者2（欧拉路径）
+        if (bad == 0) {
+            // 注意：start是否会越界
+            start = 0; while (!deg[start]) start++; end = start;
+        } else if (start == -1 || end == -1) {
+            return false;
+        }
+        // 注意：按照字典序从小到大
+        if (start > end) swap(start, end);
+        return true;
+    }
+}; 
 
 void solve() {
-    int n = 500;
-    int m; cin >> m;
-    EulerPath el(n, m);
-    for (int i = 0; i < m; i++) {
-        int u, v; cin >> u >> v; u--, v--;
-        el.add_edge(u, v);
+    int n; cin >> n;
+    vector<string> words(n); for (int i = 0; i < n; i++) cin >> words[i];
+    sort(words.begin(), words.end());
+
+    EulerPath el(100, n);
+    for (int i = 0; i < n; i++) {
+        int id1 = words[i][0] - 'A', id2 = words[i][1] - 'A';
+        el.add_edge(id1, id2);
     }
 
-    int start = 0;
-    while (!el.deg[start]) start++;
-    for (int i = 0; i < n; i++) {
-        if (el.deg[i] & 1) {
-            start = i;
-            break;
-        }
+    int start = 0, end = 0;
+    if (!el.is_valid(start, end)) {
+        cout << "No Solution" << "\n";
+        return;
     }
 
     el.sort_edges();
     el.dfs(start);
 
+    string ans;
+    int pre = -1, es = 0;
     while (el.stk.size()) {
-        cout << el.stk.top() + 1 << "\n";
-        el.stk.pop();
+        auto curr = el.stk.top(); el.stk.pop();
+        ans += char('A' + curr);
+        if (pre != -1) {
+            es++;
+        }
+        pre = curr;
     }
+    if (es != n) {
+        cout << "No Solution" << "\n";
+        return;
+    }
+    cout << ans << "\n";
 }
 
 int main() {

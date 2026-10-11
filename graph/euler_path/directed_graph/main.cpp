@@ -138,46 +138,77 @@ struct EulerPath {
             }
         }
     }
+    // 最后完成读栈后，最好判断一下边数是否等于m
+    bool is_valid(int& start, int& end) {
+        int bad = 0;
+        start = 0, end = 0;
+        for (int i = 0; i < n; i++) {
+            if (deg_in[i] == deg_out[i]) continue;
+            bad++;
+            if (deg_in[i] + 1 == deg_out[i]) start = i;
+            else if (deg_in[i] - 1 == deg_out[i]) end = i;
+            else return false;
+        } 
+        if (bad == 1 || bad > 2) return false;
+        // 注意：bad只能是0（欧拉回路）或者2（欧拉路径）
+        if (bad == 0) {
+            // 注意：start是否会越界
+            start = 0; while (!deg_out[start]) start++; end = start;
+        } else if (start == -1 || end == -1) {
+            return false;
+        }
+        return true;
+    }
 };
 
 void solve() {
-    int n, m; cin >> n >> m;
-    EulerPath el(n, m);
+    int m; cin >> m;
+    vector<string> words(m); for (string& w : words) cin >> w;
+    sort(words.begin(), words.end(), [&](const auto& aa, const auto& bb) {
+        return aa + "." < bb + ".";
+    });
+
+    vector<string> W[26][26];
+    EulerPath el(26, m);
     for (int i = 0; i < m; i++) {
-        int u, v; cin >> u >> v; u--, v--;
-        el.add_edge(u, v);
+        int b0 = words[i][0] - 'a', e0 = words[i].back() - 'a';
+        el.add_edge(b0, e0);
+        W[b0][e0].push_back(words[i]);
     }
 
-    int start = -1, end = -1, bad = 0;
-    for (int i = 0; i < n; i++) {
-        if (el.deg_in[i] == el.deg_out[i]) continue;
-        bad++;
-        if (el.deg_in[i] + 1 == el.deg_out[i]) start = i;
-        else if (el.deg_in[i] - 1 == el.deg_out[i]) end = i;
-        else { cout << "No" << "\n"; return; }
-    }
-    if (bad == 1 || bad > 2) {
-        cout << "No" << "\n";
+    int start = -1, end = -1;
+    bool valid = el.is_valid(start, end);
+    if (!valid) {
+        cout << "***" << "\n";
         return;
     }
-    // bad只能是0（欧拉回路）或者2（欧拉路径）
-    if (bad == 0) {
-        start = 0, end = 0;
-    } else {
-        if (start == -1 || end == -1) {
-            cout << "No" << "\n";
-            return;
-        }
-    }
 
-    el.sort_edges();
     el.dfs(start);
 
+    string ans;
+
+    int ptr[26][26]; 
+    memset(ptr, 0, sizeof(ptr));
+    int pre = -1, es = 0;
     while (el.stk.size()) {
-        cout << el.stk.top() + 1 << " ";
+        if (pre != -1) {
+            int curr = el.stk.top();
+            int& pt = ptr[pre][curr];
+            ans += W[pre][curr][pt] + ".";
+            es++;
+            pt++;
+        }
+        pre = el.stk.top();
         el.stk.pop();
     }
-    cout << "\n";
+
+    if (es != m) {
+        cout << "***" << "\n";
+        return;
+    }
+    
+    ans = ans.substr(0, ans.size() - 1);
+    cout << ans  << "\n";
 }
 
 int main() {
